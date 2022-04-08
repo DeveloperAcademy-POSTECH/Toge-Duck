@@ -1,0 +1,676 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CBDC9E5927FE762D00C2668F /* SwiftUIFlowLayout in Frameworks */ = {isa = PBXBuildFile; productRef = CBDC9E5827FE762D00C2668F /* SwiftUIFlowLayout */; };
+		F628DA4627FE69B200DE23F3 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F628DA4527FE69B200DE23F3 /* SearchView.swift */; };
+		F628DA4927FE908900DE23F3 /* SwiftUIFlowLayout in Frameworks */ = {isa = PBXBuildFile; productRef = F628DA4827FE908900DE23F3 /* SwiftUIFlowLayout */; };
+		F6D8200927FFD2F500CB5747 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D8200827FFD2F500CB5747 /* SignInView.swift */; };
+		F6D8200B27FFD32000CB5747 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D8200A27FFD32000CB5747 /* RegisterView.swift */; };
+		F6D8200D27FFD34400CB5747 /* HobbySelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D8200C27FFD34400CB5747 /* HobbySelectView.swift */; };
+		F6D8200F27FFD35700CB5747 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D8200E27FFD35700CB5747 /* MapView.swift */; };
+		F8AE9B7327FD182000834B44 /* togeduckApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AE9B7227FD182000834B44 /* togeduckApp.swift */; };
+		F8AE9B7527FD182000834B44 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AE9B7427FD182000834B44 /* ContentView.swift */; };
+		F8AE9B7727FD182300834B44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8AE9B7627FD182300834B44 /* Assets.xcassets */; };
+		F8AE9B7A27FD182300834B44 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8AE9B7927FD182300834B44 /* Preview Assets.xcassets */; };
+		F8AE9B8427FD182300834B44 /* togeduckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AE9B8327FD182300834B44 /* togeduckTests.swift */; };
+		F8AE9B8E27FD182300834B44 /* togeduckUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AE9B8D27FD182300834B44 /* togeduckUITests.swift */; };
+		F8AE9B9027FD182300834B44 /* togeduckUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AE9B8F27FD182300834B44 /* togeduckUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F8AE9B8027FD182300834B44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8AE9B6727FD182000834B44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8AE9B6E27FD182000834B44;
+			remoteInfo = togeduck;
+		};
+		F8AE9B8A27FD182300834B44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8AE9B6727FD182000834B44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8AE9B6E27FD182000834B44;
+			remoteInfo = togeduck;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F628DA4527FE69B200DE23F3 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		F6D8200827FFD2F500CB5747 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		F6D8200A27FFD32000CB5747 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		F6D8200C27FFD34400CB5747 /* HobbySelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbySelectView.swift; sourceTree = "<group>"; };
+		F6D8200E27FFD35700CB5747 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		F8AE9B6F27FD182000834B44 /* togeduck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = togeduck.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8AE9B7227FD182000834B44 /* togeduckApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = togeduckApp.swift; sourceTree = "<group>"; };
+		F8AE9B7427FD182000834B44 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F8AE9B7627FD182300834B44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F8AE9B7927FD182300834B44 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F8AE9B7F27FD182300834B44 /* togeduckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = togeduckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8AE9B8327FD182300834B44 /* togeduckTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = togeduckTests.swift; sourceTree = "<group>"; };
+		F8AE9B8927FD182300834B44 /* togeduckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = togeduckUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8AE9B8D27FD182300834B44 /* togeduckUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = togeduckUITests.swift; sourceTree = "<group>"; };
+		F8AE9B8F27FD182300834B44 /* togeduckUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = togeduckUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8AE9B6C27FD182000834B44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F628DA4927FE908900DE23F3 /* SwiftUIFlowLayout in Frameworks */,
+				CBDC9E5927FE762D00C2668F /* SwiftUIFlowLayout in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8AE9B7C27FD182300834B44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8AE9B8627FD182300834B44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E37AED227FD1FAE00FF9520 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		3E37AED327FD23BC00FF9520 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		3E37AED427FD23C600FF9520 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				F6D8200827FFD2F500CB5747 /* SignInView.swift */,
+				F6D8200A27FFD32000CB5747 /* RegisterView.swift */,
+				F6D8200C27FFD34400CB5747 /* HobbySelectView.swift */,
+				F628DA4527FE69B200DE23F3 /* SearchView.swift */,
+				F6D8200E27FFD35700CB5747 /* MapView.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		F8AE9B6627FD182000834B44 = {
+			isa = PBXGroup;
+			children = (
+				F8AE9B7127FD182000834B44 /* togeduck */,
+				F8AE9B8227FD182300834B44 /* togeduckTests */,
+				F8AE9B8C27FD182300834B44 /* togeduckUITests */,
+				F8AE9B7027FD182000834B44 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F8AE9B7027FD182000834B44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8AE9B6F27FD182000834B44 /* togeduck.app */,
+				F8AE9B7F27FD182300834B44 /* togeduckTests.xctest */,
+				F8AE9B8927FD182300834B44 /* togeduckUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8AE9B7127FD182000834B44 /* togeduck */ = {
+			isa = PBXGroup;
+			children = (
+				3E37AED427FD23C600FF9520 /* SignUp */,
+				3E37AED327FD23BC00FF9520 /* Feed */,
+				3E37AED227FD1FAE00FF9520 /* Main */,
+				F8AE9B7227FD182000834B44 /* togeduckApp.swift */,
+				F8AE9B7427FD182000834B44 /* ContentView.swift */,
+				F8AE9B7627FD182300834B44 /* Assets.xcassets */,
+				F8AE9B7827FD182300834B44 /* Preview Content */,
+			);
+			path = togeduck;
+			sourceTree = "<group>";
+		};
+		F8AE9B7827FD182300834B44 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F8AE9B7927FD182300834B44 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F8AE9B8227FD182300834B44 /* togeduckTests */ = {
+			isa = PBXGroup;
+			children = (
+				F8AE9B8327FD182300834B44 /* togeduckTests.swift */,
+			);
+			path = togeduckTests;
+			sourceTree = "<group>";
+		};
+		F8AE9B8C27FD182300834B44 /* togeduckUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F8AE9B8D27FD182300834B44 /* togeduckUITests.swift */,
+				F8AE9B8F27FD182300834B44 /* togeduckUITestsLaunchTests.swift */,
+			);
+			path = togeduckUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8AE9B6E27FD182000834B44 /* togeduck */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8AE9B9327FD182300834B44 /* Build configuration list for PBXNativeTarget "togeduck" */;
+			buildPhases = (
+				F8AE9B6B27FD182000834B44 /* Sources */,
+				F8AE9B6C27FD182000834B44 /* Frameworks */,
+				F8AE9B6D27FD182000834B44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = togeduck;
+			packageProductDependencies = (
+				CBDC9E5827FE762D00C2668F /* SwiftUIFlowLayout */,
+				F628DA4827FE908900DE23F3 /* SwiftUIFlowLayout */,
+			);
+			productName = togeduck;
+			productReference = F8AE9B6F27FD182000834B44 /* togeduck.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F8AE9B7E27FD182300834B44 /* togeduckTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8AE9B9627FD182300834B44 /* Build configuration list for PBXNativeTarget "togeduckTests" */;
+			buildPhases = (
+				F8AE9B7B27FD182300834B44 /* Sources */,
+				F8AE9B7C27FD182300834B44 /* Frameworks */,
+				F8AE9B7D27FD182300834B44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8AE9B8127FD182300834B44 /* PBXTargetDependency */,
+			);
+			name = togeduckTests;
+			productName = togeduckTests;
+			productReference = F8AE9B7F27FD182300834B44 /* togeduckTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F8AE9B8827FD182300834B44 /* togeduckUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8AE9B9927FD182300834B44 /* Build configuration list for PBXNativeTarget "togeduckUITests" */;
+			buildPhases = (
+				F8AE9B8527FD182300834B44 /* Sources */,
+				F8AE9B8627FD182300834B44 /* Frameworks */,
+				F8AE9B8727FD182300834B44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8AE9B8B27FD182300834B44 /* PBXTargetDependency */,
+			);
+			name = togeduckUITests;
+			productName = togeduckUITests;
+			productReference = F8AE9B8927FD182300834B44 /* togeduckUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8AE9B6727FD182000834B44 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					F8AE9B6E27FD182000834B44 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					F8AE9B7E27FD182300834B44 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = F8AE9B6E27FD182000834B44;
+					};
+					F8AE9B8827FD182300834B44 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = F8AE9B6E27FD182000834B44;
+					};
+				};
+			};
+			buildConfigurationList = F8AE9B6A27FD182000834B44 /* Build configuration list for PBXProject "togeduck" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8AE9B6627FD182000834B44;
+			packageReferences = (
+				CBDC9E5727FE762D00C2668F /* XCRemoteSwiftPackageReference "swiftui-flow-layout" */,
+				F628DA4727FE908900DE23F3 /* XCRemoteSwiftPackageReference "swiftui-flow-layout" */,
+			);
+			productRefGroup = F8AE9B7027FD182000834B44 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8AE9B6E27FD182000834B44 /* togeduck */,
+				F8AE9B7E27FD182300834B44 /* togeduckTests */,
+				F8AE9B8827FD182300834B44 /* togeduckUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8AE9B6D27FD182000834B44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8AE9B7A27FD182300834B44 /* Preview Assets.xcassets in Resources */,
+				F8AE9B7727FD182300834B44 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8AE9B7D27FD182300834B44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8AE9B8727FD182300834B44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8AE9B6B27FD182000834B44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6D8200F27FFD35700CB5747 /* MapView.swift in Sources */,
+				F6D8200927FFD2F500CB5747 /* SignInView.swift in Sources */,
+				F628DA4627FE69B200DE23F3 /* SearchView.swift in Sources */,
+				F6D8200D27FFD34400CB5747 /* HobbySelectView.swift in Sources */,
+				F6D8200B27FFD32000CB5747 /* RegisterView.swift in Sources */,
+				F8AE9B7527FD182000834B44 /* ContentView.swift in Sources */,
+				F8AE9B7327FD182000834B44 /* togeduckApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8AE9B7B27FD182300834B44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8AE9B8427FD182300834B44 /* togeduckTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8AE9B8527FD182300834B44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8AE9B9027FD182300834B44 /* togeduckUITestsLaunchTests.swift in Sources */,
+				F8AE9B8E27FD182300834B44 /* togeduckUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F8AE9B8127FD182300834B44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8AE9B6E27FD182000834B44 /* togeduck */;
+			targetProxy = F8AE9B8027FD182300834B44 /* PBXContainerItemProxy */;
+		};
+		F8AE9B8B27FD182300834B44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8AE9B6E27FD182000834B44 /* togeduck */;
+			targetProxy = F8AE9B8A27FD182300834B44 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F8AE9B9127FD182300834B44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F8AE9B9227FD182300834B44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F8AE9B9427FD182300834B44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"togeduck/Preview Content\"";
+				DEVELOPMENT_TEAM = 3Y8YH8GWMM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App needs location severs for user";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sherry.togeduck;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F8AE9B9527FD182300834B44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"togeduck/Preview Content\"";
+				DEVELOPMENT_TEAM = 3Y8YH8GWMM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App needs location severs for user";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sherry.togeduck;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F8AE9B9727FD182300834B44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sherry.togeduckTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/togeduck.app/togeduck";
+			};
+			name = Debug;
+		};
+		F8AE9B9827FD182300834B44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sherry.togeduckTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/togeduck.app/togeduck";
+			};
+			name = Release;
+		};
+		F8AE9B9A27FD182300834B44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sherry.togeduckUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = togeduck;
+			};
+			name = Debug;
+		};
+		F8AE9B9B27FD182300834B44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sherry.togeduckUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = togeduck;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8AE9B6A27FD182000834B44 /* Build configuration list for PBXProject "togeduck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8AE9B9127FD182300834B44 /* Debug */,
+				F8AE9B9227FD182300834B44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8AE9B9327FD182300834B44 /* Build configuration list for PBXNativeTarget "togeduck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8AE9B9427FD182300834B44 /* Debug */,
+				F8AE9B9527FD182300834B44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8AE9B9627FD182300834B44 /* Build configuration list for PBXNativeTarget "togeduckTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8AE9B9727FD182300834B44 /* Debug */,
+				F8AE9B9827FD182300834B44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8AE9B9927FD182300834B44 /* Build configuration list for PBXNativeTarget "togeduckUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8AE9B9A27FD182300834B44 /* Debug */,
+				F8AE9B9B27FD182300834B44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CBDC9E5727FE762D00C2668F /* XCRemoteSwiftPackageReference "swiftui-flow-layout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/globulus/swiftui-flow-layout";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		F628DA4727FE908900DE23F3 /* XCRemoteSwiftPackageReference "swiftui-flow-layout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/globulus/swiftui-flow-layout.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CBDC9E5827FE762D00C2668F /* SwiftUIFlowLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CBDC9E5727FE762D00C2668F /* XCRemoteSwiftPackageReference "swiftui-flow-layout" */;
+			productName = SwiftUIFlowLayout;
+		};
+		F628DA4827FE908900DE23F3 /* SwiftUIFlowLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F628DA4727FE908900DE23F3 /* XCRemoteSwiftPackageReference "swiftui-flow-layout" */;
+			productName = SwiftUIFlowLayout;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F8AE9B6727FD182000834B44 /* Project object */;
+}
