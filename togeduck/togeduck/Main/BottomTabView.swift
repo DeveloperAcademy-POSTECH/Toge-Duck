@@ -40,6 +40,7 @@ struct BottomTabView: View {
                 .tag(3)
         }
         .accentColor(.black)
+    }
 }
 
 struct BottomTabView_Previews: PreviewProvider {
