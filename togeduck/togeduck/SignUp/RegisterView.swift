@@ -21,8 +21,8 @@ struct RegisterView: View {
     @State var gender = 0
     @State var isNavigationLinkActive = false
     
+    
     var body: some View {
-        NavigationView{
             ZStack{
                 VStack {
                     //아이디 생성 부분
@@ -115,7 +115,7 @@ struct RegisterView: View {
                             .foregroundColor(.black)
                             
                         
-                            Spacer(minLength: 200)
+                            Spacer(minLength: 160)
                             
                             Section(header: Text("")){
                                 Picker("성별",selection: $gender) {
@@ -139,16 +139,16 @@ struct RegisterView: View {
                             .frame(width: 360, height: 50)
                             .background(Color.blue)
                             .clipShape(Capsule())
-                            .padding()
+                            .padding(.top,-30)
                         
                     })
                     
-                    .padding(.top,50)
+                    .padding(.top,80)
                 }
                 .padding()
                 
             }
-        }
+            .padding(.top,80)
         .navigationTitle("회원가입")
         .navigationBarTitleDisplayMode(.inline)
     }
@@ -159,4 +159,5 @@ struct RegisterView_Previews: PreviewProvider {
         RegisterView()
     }
 }
+
 
