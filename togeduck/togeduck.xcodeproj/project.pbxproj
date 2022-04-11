@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E1CF2A528032DF900BC744F /* ProfileHobbyContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CF2A428032DF900BC744F /* ProfileHobbyContent.swift */; };
+		3E2172592800F9C00049A128 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2172582800F9C00049A128 /* Member.swift */; };
+		3E3125DF27FFDEC700F475BD /* SwiftUIFlowLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 3E3125DE27FFDEC700F475BD /* SwiftUIFlowLayout */; };
+		3E3125E127FFDFF800F475BD /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3125E027FFDFF800F475BD /* ProfileView.swift */; };
+		3E3125E927FFE24100F475BD /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3125E827FFE24100F475BD /* ModelData.swift */; };
+		3E9D103C28010B6200404AF5 /* members.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E9D103B28010B6200404AF5 /* members.json */; };
+		3E9D103E2801144600404AF5 /* ProfileHobbyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9D103D2801144600404AF5 /* ProfileHobbyView.swift */; };
+		3E9D104028030CB800404AF5 /* ProfileHobbyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9D103F28030CB800404AF5 /* ProfileHobbyButton.swift */; };
+		3EDD955027FFE6FD002E3E1E /* ProfileDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDD954F27FFE6FD002E3E1E /* ProfileDetailView.swift */; };
 		CBDC9E5927FE762D00C2668F /* SwiftUIFlowLayout in Frameworks */ = {isa = PBXBuildFile; productRef = CBDC9E5827FE762D00C2668F /* SwiftUIFlowLayout */; };
 		F628DA4627FE69B200DE23F3 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F628DA4527FE69B200DE23F3 /* SearchView.swift */; };
 		F628DA4927FE908900DE23F3 /* SwiftUIFlowLayout in Frameworks */ = {isa = PBXBuildFile; productRef = F628DA4827FE908900DE23F3 /* SwiftUIFlowLayout */; };
@@ -41,6 +50,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E1CF2A428032DF900BC744F /* ProfileHobbyContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHobbyContent.swift; sourceTree = "<group>"; };
+		3E2172582800F9C00049A128 /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
+		3E3125E027FFDFF800F475BD /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileView.swift; path = togeduck/Profile/Views/ProfileView.swift; sourceTree = SOURCE_ROOT; };
+		3E3125E827FFE24100F475BD /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		3E9D103B28010B6200404AF5 /* members.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = members.json; sourceTree = "<group>"; };
+		3E9D103D2801144600404AF5 /* ProfileHobbyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHobbyView.swift; sourceTree = "<group>"; };
+		3E9D103F28030CB800404AF5 /* ProfileHobbyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHobbyButton.swift; sourceTree = "<group>"; };
+		3EDD954F27FFE6FD002E3E1E /* ProfileDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailView.swift; sourceTree = "<group>"; };
 		F628DA4527FE69B200DE23F3 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		F6D8200827FFD2F500CB5747 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		F6D8200A27FFD32000CB5747 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
@@ -65,6 +82,7 @@
 			files = (
 				F628DA4927FE908900DE23F3 /* SwiftUIFlowLayout in Frameworks */,
 				CBDC9E5927FE762D00C2668F /* SwiftUIFlowLayout in Frameworks */,
+				3E3125DF27FFDEC700F475BD /* SwiftUIFlowLayout in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +103,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E3125E227FFE1E700F475BD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3E3125E027FFDFF800F475BD /* ProfileView.swift */,
+				3EDD954F27FFE6FD002E3E1E /* ProfileDetailView.swift */,
+				3E9D103D2801144600404AF5 /* ProfileHobbyView.swift */,
+				3E9D103F28030CB800404AF5 /* ProfileHobbyButton.swift */,
+				3E1CF2A428032DF900BC744F /* ProfileHobbyContent.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3E3125E327FFE1ED00F475BD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3E3125E827FFE24100F475BD /* ModelData.swift */,
+				3E2172582800F9C00049A128 /* Member.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3E3125E427FFE1F300F475BD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3E9D103B28010B6200404AF5 /* members.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		3E37AED227FD1FAE00FF9520 /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,11 +139,14 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		3E37AED327FD23BC00FF9520 /* Feed */ = {
+		3E37AED327FD23BC00FF9520 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				3E3125E427FFE1F300F475BD /* Resources */,
+				3E3125E327FFE1ED00F475BD /* Model */,
+				3E3125E227FFE1E700F475BD /* Views */,
 			);
-			path = Feed;
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		3E37AED427FD23C600FF9520 /* SignUp */ = {
@@ -135,7 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				3E37AED427FD23C600FF9520 /* SignUp */,
-				3E37AED327FD23BC00FF9520 /* Feed */,
+				3E37AED327FD23BC00FF9520 /* Profile */,
 				3E37AED227FD1FAE00FF9520 /* Main */,
 				F8AE9B7227FD182000834B44 /* togeduckApp.swift */,
 				F8AE9B7427FD182000834B44 /* ContentView.swift */,
@@ -189,6 +239,7 @@
 			packageProductDependencies = (
 				CBDC9E5827FE762D00C2668F /* SwiftUIFlowLayout */,
 				F628DA4827FE908900DE23F3 /* SwiftUIFlowLayout */,
+				3E3125DE27FFDEC700F475BD /* SwiftUIFlowLayout */,
 			);
 			productName = togeduck;
 			productReference = F8AE9B6F27FD182000834B44 /* togeduck.app */;
@@ -265,6 +316,7 @@
 			packageReferences = (
 				CBDC9E5727FE762D00C2668F /* XCRemoteSwiftPackageReference "swiftui-flow-layout" */,
 				F628DA4727FE908900DE23F3 /* XCRemoteSwiftPackageReference "swiftui-flow-layout" */,
+				3E3125DD27FFDEC700F475BD /* XCRemoteSwiftPackageReference "swiftui-flow-layout" */,
 			);
 			productRefGroup = F8AE9B7027FD182000834B44 /* Products */;
 			projectDirPath = "";
@@ -282,6 +334,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E9D103C28010B6200404AF5 /* members.json in Resources */,
 				F8AE9B7A27FD182300834B44 /* Preview Assets.xcassets in Resources */,
 				F8AE9B7727FD182300834B44 /* Assets.xcassets in Resources */,
 			);
@@ -308,13 +361,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E3125E127FFDFF800F475BD /* ProfileView.swift in Sources */,
 				F6D8200F27FFD35700CB5747 /* MapView.swift in Sources */,
 				F6D8200927FFD2F500CB5747 /* SignInView.swift in Sources */,
+				3EDD955027FFE6FD002E3E1E /* ProfileDetailView.swift in Sources */,
 				F628DA4627FE69B200DE23F3 /* SearchView.swift in Sources */,
 				F6D8200D27FFD34400CB5747 /* HobbySelectView.swift in Sources */,
 				F6D8200B27FFD32000CB5747 /* RegisterView.swift in Sources */,
+				3E9D104028030CB800404AF5 /* ProfileHobbyButton.swift in Sources */,
+				3E3125E927FFE24100F475BD /* ModelData.swift in Sources */,
 				F8AE9B7527FD182000834B44 /* ContentView.swift in Sources */,
+				3E1CF2A528032DF900BC744F /* ProfileHobbyContent.swift in Sources */,
+				3E9D103E2801144600404AF5 /* ProfileHobbyView.swift in Sources */,
 				F8AE9B7327FD182000834B44 /* togeduckApp.swift in Sources */,
+				3E2172592800F9C00049A128 /* Member.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -641,6 +701,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		3E3125DD27FFDEC700F475BD /* XCRemoteSwiftPackageReference "swiftui-flow-layout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/globulus/swiftui-flow-layout";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		CBDC9E5727FE762D00C2668F /* XCRemoteSwiftPackageReference "swiftui-flow-layout" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/globulus/swiftui-flow-layout";
@@ -660,6 +728,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		3E3125DE27FFDEC700F475BD /* SwiftUIFlowLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CBDC9E5727FE762D00C2668F /* XCRemoteSwiftPackageReference "swiftui-flow-layout" */;
+			productName = SwiftUIFlowLayout;
+		};
 		CBDC9E5827FE762D00C2668F /* SwiftUIFlowLayout */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CBDC9E5727FE762D00C2668F /* XCRemoteSwiftPackageReference "swiftui-flow-layout" */;
