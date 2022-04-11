@@ -6,6 +6,7 @@
         "age": 23,
         "subscribes": 23,
         "friends": 8,
+        "distance" : 10,
         "imageName": "profileImage1",
         "hobbies": [
             {
@@ -66,6 +67,7 @@
         "age": 23,
         "subscribes": 27,
         "friends": 20,
+        "distance" : 15,
         "imageName": "profileImage2",
         "hobbies": [
             {
@@ -102,6 +104,7 @@
         "age": 23,
         "subscribes": 10234,
         "friends": 2912,
+        "distance" : 21,
         "imageName": "profileImage3",
         "hobbies": [
             {
@@ -138,6 +141,7 @@
         "age": 23,
         "subscribes": 102,
         "friends": 50,
+        "distance" : 33,
         "imageName": "profileImage4",
         "hobbies": [
             {
@@ -174,6 +178,7 @@
         "age": 23,
         "subscribes": 2291,
         "friends": 240,
+        "distance" : 19,
         "imageName": "profileImage5",
         "hobbies": [
             {
@@ -210,6 +215,7 @@
         "age": 23,
         "subscribes": 591,
         "friends": 241,
+        "distance" : 25,
         "imageName": "profileImage6",
         "hobbies": [
             {
