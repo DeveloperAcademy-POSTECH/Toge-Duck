@@ -8,44 +8,33 @@
 import Foundation
 import SwiftUI
 
-struct Member: Hashable, Codable {
+struct Member: Hashable, Codable, Identifiable {
     var name: String
-    var introduction: String
+    var introduction: Strings
     var id: Int
     var age: Int
     var subscribes: Int
     var friends: Int
+    var distance : Int
+    var hobbies: [Hobby]
     
     private var imageName: String
     var image: Image {
         Image(imageName)
     }
-    
-    var hobbies: [Hobby]
-//    struct Hobby: Hashable, Codable{
-//        var hobbyName: String
-//        var hobbyPost: [post]
-//    }
-    
-//    struct post: Hashable, Codable {
-//        var postTitle: String
-//        var postContent: String
-//        private var postImageName: String
-//        var postImage: Image{
-//            Image(postImageName)
-//        }
-//    }
 }
 
-struct Hobby: Hashable, Codable{
+struct Hobby: Hashable, Codable, Identifiable {
+    let id = UUID()
     var hobbyName: String
     var hobbyPost: [Post]
 }
 
-struct Post: Hashable, Codable {
-//    var id = UUID()
+struct Post: Hashable, Codable, Identifiable {
+    let id = UUID()
     var postTitle: String
     var postContent: String
+    
     private var postImageName: String
     var postImage: Image{
         Image(postImageName)
