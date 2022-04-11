@@ -11,7 +11,7 @@ import SwiftUI
 struct togeduckApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }

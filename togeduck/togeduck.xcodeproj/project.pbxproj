@@ -23,6 +23,7 @@
 		F6D8200B27FFD32000CB5747 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D8200A27FFD32000CB5747 /* RegisterView.swift */; };
 		F6D8200D27FFD34400CB5747 /* HobbySelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D8200C27FFD34400CB5747 /* HobbySelectView.swift */; };
 		F6D8200F27FFD35700CB5747 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D8200E27FFD35700CB5747 /* MapView.swift */; };
+		F8355F9027FFE6E5001FA274 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8355F8F27FFE6E5001FA274 /* MainView.swift */; };
 		F8AE9B7327FD182000834B44 /* togeduckApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AE9B7227FD182000834B44 /* togeduckApp.swift */; };
 		F8AE9B7527FD182000834B44 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AE9B7427FD182000834B44 /* ContentView.swift */; };
 		F8AE9B7727FD182300834B44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8AE9B7627FD182300834B44 /* Assets.xcassets */; };
@@ -63,6 +64,7 @@
 		F6D8200A27FFD32000CB5747 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		F6D8200C27FFD34400CB5747 /* HobbySelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbySelectView.swift; sourceTree = "<group>"; };
 		F6D8200E27FFD35700CB5747 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		F8355F8F27FFE6E5001FA274 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		F8AE9B6F27FD182000834B44 /* togeduck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = togeduck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8AE9B7227FD182000834B44 /* togeduckApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = togeduckApp.swift; sourceTree = "<group>"; };
 		F8AE9B7427FD182000834B44 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 		3E37AED227FD1FAE00FF9520 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				F8355F8F27FFE6E5001FA274 /* MainView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 			files = (
 				3E3125E127FFDFF800F475BD /* ProfileView.swift in Sources */,
 				F6D8200F27FFD35700CB5747 /* MapView.swift in Sources */,
+				F8355F9027FFE6E5001FA274 /* MainView.swift in Sources */,
 				F6D8200927FFD2F500CB5747 /* SignInView.swift in Sources */,
 				3EDD955027FFE6FD002E3E1E /* ProfileDetailView.swift in Sources */,
 				F628DA4627FE69B200DE23F3 /* SearchView.swift in Sources */,
