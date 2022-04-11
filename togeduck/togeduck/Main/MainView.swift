@@ -7,29 +7,50 @@
 
 import SwiftUI
 
+//struct cardData: Identifiable{
+//    var group_title: String
+//    var image_list: String
+//}
+
 
 struct MainView: View {
-
-//    let group_titles = ["라이딩을 좋아해요", "토트넘을 좋아해요", "30분 거리에 있어요", "농구를 좋아해요","수영 좋아해요","패션을 좋아해요","희귀한 취미가 있어요"]
+//    let data: [cardData] = [
+//        cardData(group_title: "라이딩을 좋아해요", image_list: "boy"),
+//        cardData(group_title: "축구를 좋아해요", image_list: "boy"),
+//        cardData(group_title: "30분 거리에 있어요", image_list: "girl"),
+//        cardData(group_title: "30분 거리에 있어요", image_list: "girl"),
+//        cardData(group_title: "30분 거리에 있어요", image_list: "girl"),
+//        cardData(group_title: "30분 거리에 있어요", image_list: "girl"),
+//    ]
     
+//    init() {
+//        UITableView.appearance().separatorColor = .clear
+//    }
     
     var body: some View {
-        Text("MainView")
-            .padding()
-        VStack{
-//            ForEach(group_titles, id: \.self){
-            ForEach(0..<7){_ in
-                Button(action: {
-                }){
-                    CardView()
+        
+        NavigationView {
+            VStack{
+
+                    ForEach(0..<5){_ in
+                        NavigationLink(destination: Text("프로필 슬라이드")) {
+                            CardView()
+                        }
                         .background(RoundedRectangle(cornerRadius: 10)
-                            
+                            .stroke(Color(.sRGB,red: 150/255, green: 150/255, blue: 150/255, opacity: 0.5), lineWidth: 1)
                         )
-                }
+                        .padding(3)
+                    }
+
+                
             }
+            .navigationTitle(Text("MainView"))
+            
         }
     }
 }
+
+
 
 struct CardView: View{
 //    var group_title:String
@@ -40,13 +61,13 @@ struct CardView: View{
             Text("라이딩을 좋아해요")
                 .foregroundColor(.primary)
             HStack {
-                ForEach(0..<4){_ in
+                ForEach(0..<5){_ in
                     Image("girl")
                 }
+            Image("greaterthan")
             }
         }
-//        .cornerRadius(10)
-//        .padding([.top, .horizontal])
+        .padding()
     }
 }
 
