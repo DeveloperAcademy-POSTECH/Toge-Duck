@@ -20,16 +20,14 @@ struct ProfileDetailView: View {
             member.image
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 160, height: 160)
+                .frame(width: 120, height: 120)
                 .clipShape(Rectangle())
             Text(member.name)
                 .fontWeight(.heavy)
                 .font(.system(size:25))
-//                .padding(.top, -15)
-            Text("10km 이내에 있어요")
+            Text("\(member.distance)km 이내에 있어요")
                 .font(.system(size: 15))
                 .foregroundColor(Color(red: 0.216, green: 0.216, blue: 0.216))
-//                .padding(.top, -5.0)
             HStack {
                 Image(systemName: "heart.fill")
                 Text("\(member.subscribes)")

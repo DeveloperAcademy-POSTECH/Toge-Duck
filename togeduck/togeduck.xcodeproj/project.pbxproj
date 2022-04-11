@@ -13,7 +13,6 @@
 		3E3125E127FFDFF800F475BD /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3125E027FFDFF800F475BD /* ProfileView.swift */; };
 		3E3125E927FFE24100F475BD /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3125E827FFE24100F475BD /* ModelData.swift */; };
 		3E9D103C28010B6200404AF5 /* members.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E9D103B28010B6200404AF5 /* members.json */; };
-		3E9D103E2801144600404AF5 /* ProfileHobbyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9D103D2801144600404AF5 /* ProfileHobbyView.swift */; };
 		3E9D104028030CB800404AF5 /* ProfileHobbyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9D103F28030CB800404AF5 /* ProfileHobbyButton.swift */; };
 		3EDD955027FFE6FD002E3E1E /* ProfileDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDD954F27FFE6FD002E3E1E /* ProfileDetailView.swift */; };
 		3FB3251D2803C6F000792AA2 /* ProfileCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB3251C2803C6F000792AA2 /* ProfileCardView.swift */; };
@@ -59,7 +58,6 @@
 		3E3125E027FFDFF800F475BD /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileView.swift; path = togeduck/Profile/Views/ProfileView.swift; sourceTree = SOURCE_ROOT; };
 		3E3125E827FFE24100F475BD /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		3E9D103B28010B6200404AF5 /* members.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = members.json; sourceTree = "<group>"; };
-		3E9D103D2801144600404AF5 /* ProfileHobbyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHobbyView.swift; sourceTree = "<group>"; };
 		3E9D103F28030CB800404AF5 /* ProfileHobbyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHobbyButton.swift; sourceTree = "<group>"; };
 		3EDD954F27FFE6FD002E3E1E /* ProfileDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailView.swift; sourceTree = "<group>"; };
 		3FB3251C2803C6F000792AA2 /* ProfileCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCardView.swift; sourceTree = "<group>"; };
@@ -116,7 +114,6 @@
 			children = (
 				3E3125E027FFDFF800F475BD /* ProfileView.swift */,
 				3EDD954F27FFE6FD002E3E1E /* ProfileDetailView.swift */,
-				3E9D103D2801144600404AF5 /* ProfileHobbyView.swift */,
 				3E9D103F28030CB800404AF5 /* ProfileHobbyButton.swift */,
 				3E1CF2A428032DF900BC744F /* ProfileHobbyContent.swift */,
 				3FB3251C2803C6F000792AA2 /* ProfileCardView.swift */,
@@ -388,7 +385,6 @@
 				F8AE9B7527FD182000834B44 /* ContentView.swift in Sources */,
 				3E1CF2A528032DF900BC744F /* ProfileHobbyContent.swift in Sources */,
 				3FB3251F2803C75000792AA2 /* ProfileBoardView.swift in Sources */,
-				3E9D103E2801144600404AF5 /* ProfileHobbyView.swift in Sources */,
 				F8AE9B7327FD182000834B44 /* togeduckApp.swift in Sources */,
 				3E2172592800F9C00049A128 /* Member.swift in Sources */,
 			);
