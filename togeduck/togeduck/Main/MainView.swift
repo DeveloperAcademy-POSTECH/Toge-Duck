@@ -9,30 +9,44 @@ import SwiftUI
 
 
 struct MainView: View {
+
+//    let group_titles = ["라이딩을 좋아해요", "토트넘을 좋아해요", "30분 거리에 있어요", "농구를 좋아해요","수영 좋아해요","패션을 좋아해요","희귀한 취미가 있어요"]
     
-    let group_title = ["라이딩을 좋아해요", "토트넘을 좋아해요", "30분 거리에 있어요", "농구를 좋아해요","수영 좋아해요","패션을 좋아해요","희귀한 취미가 있어요"]
     
-    let riding_characters = ["girl", "boy","girl","boy"]
     var body: some View {
         Text("MainView")
             .padding()
         VStack{
+//            ForEach(group_titles, id: \.self){
             ForEach(0..<7){_ in
                 Button(action: {
-                }) {
-                    VStack{
-                        Text("라이딩을 좋아해요")
-                        HStack {
-                            ForEach(0..<4){_ in
-                                Image("girl")
-                            }
-                        }
-
-                    }.background()
+                }){
+                    CardView()
+                        .background(RoundedRectangle(cornerRadius: 10)
+                            
+                        )
                 }
             }
-        
         }
+    }
+}
+
+struct CardView: View{
+//    var group_title:String
+//    var riding_characters: String
+    
+    var body: some View {
+        VStack{
+            Text("라이딩을 좋아해요")
+                .foregroundColor(.primary)
+            HStack {
+                ForEach(0..<4){_ in
+                    Image("girl")
+                }
+            }
+        }
+//        .cornerRadius(10)
+//        .padding([.top, .horizontal])
     }
 }
 
