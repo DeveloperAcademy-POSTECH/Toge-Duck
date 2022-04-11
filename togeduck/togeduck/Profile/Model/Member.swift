@@ -10,7 +10,7 @@ import SwiftUI
 
 struct Member: Hashable, Codable, Identifiable {
     var name: String
-    var introduction: Strings
+    var introduction: String
     var id: Int
     var age: Int
     var subscribes: Int
