@@ -37,19 +37,6 @@ struct ProfileCardView: View {
                     .foregroundColor(Color.gray)
                     .padding(.top, -10)
                 
-                // SwiftUILowLayout 패키지를 사용해서 tag view 를 자동으로 생성
-//                FlowLayout(mode: .scrollable, items: user.hobbies, itemSpacing: 4) {
-//                    let name = $0
-//
-//                    Text(name.hobbyName)
-//                        .padding(.horizontal)
-//                        .frame(height: 35)
-//                        .background(Color("DarkGray"))
-//                        .foregroundColor(Color.white)
-//                        .clipShape(RoundedRectangle(cornerRadius: 30))
-//
-//                }.padding()
-                
                 HobbyList(name: user.hobbies)
                     .padding()
                     
@@ -81,17 +68,34 @@ struct HobbyList: View {
     var name : [Hobby]
     
     var body: some View {
-        
-        ScrollView(.horizontal) {
-            HStack {
-                ForEach(name) { index in
-                    Text(index.hobbyName)
+        HStack {
+            if name.count > 3 {
+                ForEach(0..<3){ index in
+                    
+                    Text(name[index].hobbyName)
                         .padding(.horizontal)
                         .frame(height: 35)
                         .background(Color("DarkGray"))
                         .foregroundColor(Color.white)
                         .clipShape(RoundedRectangle(cornerRadius: 30))
-
+                }
+                
+                Image(systemName: "plus.circle")
+                    .resizable()
+                    .frame(width: 25, height: 25)
+                
+                Text("\(name.count-3)")
+                    .font(.system(size: 25))
+                
+            } else {
+                ForEach(0..<name.count){ index in
+                    
+                    Text(name[index].hobbyName)
+                        .padding(.horizontal)
+                        .frame(height: 35)
+                        .background(Color("DarkGray"))
+                        .foregroundColor(Color.white)
+                        .clipShape(RoundedRectangle(cornerRadius: 30))
                 }
             }
         }
@@ -123,7 +127,6 @@ struct GridView: View {
 
                     userPostImageView(postImage: index.hobbyPost)
                         .frame(height: 100)
-                    count += 1
                 }
             }
             .padding(.vertical)
