@@ -28,12 +28,12 @@ struct MainView: View {
 //    }
     
     var body: some View {
-        
+    
         ScrollView{
             VStack{
 
                     ForEach(0..<5){_ in
-                        NavigationLink(destination: Text("프로필 슬라이드")) {
+                        NavigationLink(destination: ProfileBoardView()) {
                             CardView()
                         }
                         .background(RoundedRectangle(cornerRadius: 10)
