@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3E1CF2A528032DF900BC744F /* ProfileHobbyContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CF2A428032DF900BC744F /* ProfileHobbyContent.swift */; };
+		3E1CF2A7280505D000BC744F /* ContentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1CF2A6280505D000BC744F /* ContentDetailView.swift */; };
 		3E2172592800F9C00049A128 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2172582800F9C00049A128 /* Member.swift */; };
 		3E3125DF27FFDEC700F475BD /* SwiftUIFlowLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 3E3125DE27FFDEC700F475BD /* SwiftUIFlowLayout */; };
 		3E3125E127FFDFF800F475BD /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3125E027FFDFF800F475BD /* ProfileView.swift */; };
@@ -59,6 +60,7 @@
 
 /* Begin PBXFileReference section */
 		3E1CF2A428032DF900BC744F /* ProfileHobbyContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHobbyContent.swift; sourceTree = "<group>"; };
+		3E1CF2A6280505D000BC744F /* ContentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailView.swift; sourceTree = "<group>"; };
 		3E2172582800F9C00049A128 /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
 		3E3125E027FFDFF800F475BD /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileView.swift; path = togeduck/Profile/Views/ProfileView.swift; sourceTree = SOURCE_ROOT; };
 		3E3125E827FFE24100F475BD /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				3FB3251C2803C6F000792AA2 /* ProfileCardView.swift */,
 				3FB3251E2803C75000792AA2 /* ProfileBoardView.swift */,
 				CB92E12F28051218006BB3F0 /* FeedView.swift */,
+				3E1CF2A6280505D000BC744F /* ContentDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -403,6 +406,7 @@
 				3E9D104028030CB800404AF5 /* ProfileHobbyButton.swift in Sources */,
 				3E3125E927FFE24100F475BD /* ModelData.swift in Sources */,
 				F8AE9B7527FD182000834B44 /* ContentView.swift in Sources */,
+				3E1CF2A7280505D000BC744F /* ContentDetailView.swift in Sources */,
 				3E1CF2A528032DF900BC744F /* ProfileHobbyContent.swift in Sources */,
 				3FB3251F2803C75000792AA2 /* ProfileBoardView.swift in Sources */,
 				F8AE9B7327FD182000834B44 /* togeduckApp.swift in Sources */,
