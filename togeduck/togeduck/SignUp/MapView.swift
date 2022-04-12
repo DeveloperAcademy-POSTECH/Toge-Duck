@@ -12,12 +12,14 @@ struct MapView: View {
     @StateObject private var viewModel = MapViewModel()
     
     var body: some View {
-        Map(coordinateRegion: $viewModel.region, showsUserLocation: true)
-            .ignoresSafeArea()
-            .accentColor(Color(.systemPink))
-            .onAppear {
-                viewModel.checkIfLocationServicesIsEnabled()
-            }
+        NavigationView{
+            Map(coordinateRegion: $viewModel.region, showsUserLocation: true)
+                .ignoresSafeArea()
+                .accentColor(Color(.systemPink))
+                .onAppear {
+                    viewModel.checkIfLocationServicesIsEnabled()
+                }
+        }
     }
 }
 

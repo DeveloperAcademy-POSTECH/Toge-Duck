@@ -20,6 +20,10 @@
 		3FB3251F2803C75000792AA2 /* ProfileBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB3251E2803C75000792AA2 /* ProfileBoardView.swift */; };
 		3FB325212803C86400792AA2 /* BottomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB325202803C86400792AA2 /* BottomTabView.swift */; };
 		CBDC9E5927FE762D00C2668F /* SwiftUIFlowLayout in Frameworks */ = {isa = PBXBuildFile; productRef = CBDC9E5827FE762D00C2668F /* SwiftUIFlowLayout */; };
+		F620EDDB28042B4B006B3DE9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F620EDDA28042B4B006B3DE9 /* GoogleService-Info.plist */; };
+		F620EDDF28042C41006B3DE9 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F620EDDE28042C41006B3DE9 /* FirebaseAuth */; };
+		F620EDE128042C41006B3DE9 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F620EDE028042C41006B3DE9 /* FirebaseFirestore */; };
+		F620EDE328042C41006B3DE9 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = F620EDE228042C41006B3DE9 /* FirebaseStorage */; };
 		F628DA4627FE69B200DE23F3 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F628DA4527FE69B200DE23F3 /* SearchView.swift */; };
 		F628DA4927FE908900DE23F3 /* SwiftUIFlowLayout in Frameworks */ = {isa = PBXBuildFile; productRef = F628DA4827FE908900DE23F3 /* SwiftUIFlowLayout */; };
 		F6D8200927FFD2F500CB5747 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D8200827FFD2F500CB5747 /* SignInView.swift */; };
@@ -65,6 +69,8 @@
 		3FB3251C2803C6F000792AA2 /* ProfileCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCardView.swift; sourceTree = "<group>"; };
 		3FB3251E2803C75000792AA2 /* ProfileBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileBoardView.swift; sourceTree = "<group>"; };
 		3FB325202803C86400792AA2 /* BottomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTabView.swift; sourceTree = "<group>"; };
+		F620EDDA28042B4B006B3DE9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F620EDDC28042B8F006B3DE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F628DA4527FE69B200DE23F3 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		F6D8200827FFD2F500CB5747 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		F6D8200A27FFD32000CB5747 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
@@ -91,6 +97,9 @@
 				F628DA4927FE908900DE23F3 /* SwiftUIFlowLayout in Frameworks */,
 				CBDC9E5927FE762D00C2668F /* SwiftUIFlowLayout in Frameworks */,
 				3E3125DF27FFDEC700F475BD /* SwiftUIFlowLayout in Frameworks */,
+				F620EDE128042C41006B3DE9 /* FirebaseFirestore in Frameworks */,
+				F620EDDF28042C41006B3DE9 /* FirebaseAuth in Frameworks */,
+				F620EDE328042C41006B3DE9 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +178,7 @@
 				F6D8200C27FFD34400CB5747 /* HobbySelectView.swift */,
 				F628DA4527FE69B200DE23F3 /* SearchView.swift */,
 				F6D8200E27FFD35700CB5747 /* MapView.swift */,
+				F620EDDA28042B4B006B3DE9 /* GoogleService-Info.plist */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -196,6 +206,7 @@
 		F8AE9B7127FD182000834B44 /* togeduck */ = {
 			isa = PBXGroup;
 			children = (
+				F620EDDC28042B8F006B3DE9 /* Info.plist */,
 				3E37AED427FD23C600FF9520 /* SignUp */,
 				3E37AED327FD23BC00FF9520 /* Profile */,
 				3E37AED227FD1FAE00FF9520 /* Main */,
@@ -252,6 +263,9 @@
 				CBDC9E5827FE762D00C2668F /* SwiftUIFlowLayout */,
 				F628DA4827FE908900DE23F3 /* SwiftUIFlowLayout */,
 				3E3125DE27FFDEC700F475BD /* SwiftUIFlowLayout */,
+				F620EDDE28042C41006B3DE9 /* FirebaseAuth */,
+				F620EDE028042C41006B3DE9 /* FirebaseFirestore */,
+				F620EDE228042C41006B3DE9 /* FirebaseStorage */,
 			);
 			productName = togeduck;
 			productReference = F8AE9B6F27FD182000834B44 /* togeduck.app */;
@@ -329,6 +343,7 @@
 				CBDC9E5727FE762D00C2668F /* XCRemoteSwiftPackageReference "swiftui-flow-layout" */,
 				F628DA4727FE908900DE23F3 /* XCRemoteSwiftPackageReference "swiftui-flow-layout" */,
 				3E3125DD27FFDEC700F475BD /* XCRemoteSwiftPackageReference "swiftui-flow-layout" */,
+				F620EDDD28042C41006B3DE9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = F8AE9B7027FD182000834B44 /* Products */;
 			projectDirPath = "";
@@ -347,6 +362,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E9D103C28010B6200404AF5 /* members.json in Resources */,
+				F620EDDB28042B4B006B3DE9 /* GoogleService-Info.plist in Resources */,
 				F8AE9B7A27FD182300834B44 /* Preview Assets.xcassets in Resources */,
 				F8AE9B7727FD182300834B44 /* Assets.xcassets in Resources */,
 			);
@@ -549,9 +565,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"togeduck/Preview Content\"";
-				DEVELOPMENT_TEAM = 3Y8YH8GWMM;
+				DEVELOPMENT_TEAM = A8RC8B498C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = togeduck/Info.plist;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App needs location severs for user";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -580,9 +597,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"togeduck/Preview Content\"";
-				DEVELOPMENT_TEAM = 3Y8YH8GWMM;
+				DEVELOPMENT_TEAM = A8RC8B498C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = togeduck/Info.plist;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App needs location severs for user";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -733,6 +751,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		F620EDDD28042C41006B3DE9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
 		F628DA4727FE908900DE23F3 /* XCRemoteSwiftPackageReference "swiftui-flow-layout" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/globulus/swiftui-flow-layout.git";
@@ -753,6 +779,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CBDC9E5727FE762D00C2668F /* XCRemoteSwiftPackageReference "swiftui-flow-layout" */;
 			productName = SwiftUIFlowLayout;
+		};
+		F620EDDE28042C41006B3DE9 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F620EDDD28042C41006B3DE9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		F620EDE028042C41006B3DE9 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F620EDDD28042C41006B3DE9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		F620EDE228042C41006B3DE9 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F620EDDD28042C41006B3DE9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
 		};
 		F628DA4827FE908900DE23F3 /* SwiftUIFlowLayout */ = {
 			isa = XCSwiftPackageProductDependency;
