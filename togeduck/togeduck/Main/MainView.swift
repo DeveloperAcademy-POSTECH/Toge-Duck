@@ -28,28 +28,28 @@ struct MainView: View {
 //    }
     
     var body: some View {
-        
-        NavigationView {
             ScrollView{
                 VStack{
-
                         ForEach(0..<5){_ in
                             NavigationLink(destination: Text("프로필 슬라이드")) {
                                 CardView()
                             }
-                            .background(RoundedRectangle(cornerRadius: 10)
+                            
+                            .background(RoundedRectangle(cornerRadius: 20)
                                 .stroke(Color(.sRGB,red: 150/255, green: 150/255, blue: 150/255, opacity: 0.5), lineWidth: 1)
+                                .shadow(color: Color.white, radius: 3, x: 3, y: 3)
+                                .shadow(color: Color.gray, radius: 5, x: 0, y: 0)
+                            )
+                            .background(Color.white)
+                            .background(RoundedRectangle(cornerRadius: 30)
+                                .stroke(Color(.sRGB,red: 150/255, green: 150/255, blue: 150/255, opacity: 0.5), lineWidth: 1)
+                                .shadow(color: Color.black, radius: 6, x: 0, y: 0)
                             )
                             .padding(6.0)
                         }
-
-                    
                 }
-
                 .navigationTitle(Text("MainView"))
-                
             }
-        }
     }
 }
 
@@ -63,16 +63,21 @@ struct CardView: View{
         VStack{
             Text("라이딩을 좋아해요")
                 .foregroundColor(.primary)
-                .padding(.leading, -150.0)
+                .padding(.leading, -140.0)
+                .padding(.top, 16.0)
+                .padding(.bottom, -6)
+                .font(.system(size: 18, weight: .semibold))
             HStack {
                 ForEach(0..<5){_ in
                     Image("dotimg5")
                 }
             Image("greaterthan")
             }
-            .padding(3.0)
+            .padding(9.0)
         }
-        .padding(8)
+        .padding(4)
+        .padding(.horizontal, 10.0)
+        
     }
 }
 
