@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import SwiftUIFlowLayout
 
 struct ProfileCardView: View {
     
@@ -85,9 +84,6 @@ struct HobbyList: View {
         
         ScrollView(.horizontal) {
             HStack {
-                
-                ForEach(name.last)
-                
                 ForEach(name) { index in
                     Text(index.hobbyName)
                         .padding(.horizontal)
@@ -112,11 +108,11 @@ struct ProfileCardView_Previews: PreviewProvider {
 
 struct GridView: View {
     
+    @State var count = 0
     var post : [Hobby]
     
     let rows: [GridItem] = [
         GridItem(.adaptive(minimum: 80), spacing: 0)
-
     ]
     
     var body: some View {
@@ -127,6 +123,7 @@ struct GridView: View {
 
                     userPostImageView(postImage: index.hobbyPost)
                         .frame(height: 100)
+                    count += 1
                 }
             }
             .padding(.vertical)

@@ -9,25 +9,28 @@ import SwiftUI
 
 struct ProfileBoardView: View {
     var body: some View {
-        NavigationView {
-            TabView() {
-                ForEach(members) { index in
-                    NavigationLink(destination: ProfileView()){
-                        ProfileCardView(user: index)
-                            .frame(maxWidth: .infinity, maxHeight: .infinity)
-                            .background(Color.white)
-                            .clipShape(RoundedRectangle(cornerRadius: 30))
-                            .shadow(color: .gray, radius: 5, x: 3, y: 5)
-                            .padding()
-                            .accentColor(.black)
+        
+        GeometryReader { geometry in
+            NavigationView {
+                TabView() {
+                    ForEach(members) { index in
+                        NavigationLink(destination: ProfileView()){
+                            ProfileCardView(user: index)
+                                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                                .background(Color.white)
+                                .clipShape(RoundedRectangle(cornerRadius: 30))
+                                .shadow(color: .gray, radius: 5, x: 3, y: 5)
+                                .padding()
+                                .accentColor(.black)
+                        }
                     }
                 }
+                .tabViewStyle(PageTabViewStyle())
+                .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
+                .navigationBarHidden(true)
+                
+                Spacer(minLength: 10)
             }
-            .tabViewStyle(PageTabViewStyle())
-            .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
-            .navigationBarHidden(true)
-            
-            Spacer(minLength: 10)
         }
     }
 }
