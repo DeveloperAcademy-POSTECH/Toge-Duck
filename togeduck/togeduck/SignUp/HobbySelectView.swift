@@ -47,24 +47,24 @@ struct HobbySelectView: View {
                             
                         } else {
                             FlowLayout(mode: .scrollable,
-                               items: select,
-                               itemSpacing: 4) {
+                                       items: select,
+                                       itemSpacing: 4) {
                                 let name = $0
                                 
                                 Button(action: {
                                     select = select.filter { $0 != name }
                                 }) {
                                     Text(name)
-                                      .font(.system(size: 12))
-                                      .foregroundColor(Color.white)
-                                      .padding(10)
-                                      .background(RoundedRectangle(cornerRadius: 50)
-                                        .foregroundColor(Color.black))
+                                        .font(.system(size: 12))
+                                        .foregroundColor(Color.white)
+                                        .padding(10)
+                                        .background(RoundedRectangle(cornerRadius: 50)
+                                            .foregroundColor(Color.black))
                                 }
                             }.padding(.top)
                         }
                     }.padding()
-                
+                    
                     VStack {
                         
                         Text("가장 많이 찾는 취미")
@@ -74,19 +74,19 @@ struct HobbySelectView: View {
                             .padding(.leading, 5)
                         
                         FlowLayout(mode: .scrollable,
-                           items: favorite,
-                           itemSpacing: 4) {
+                                   items: favorite,
+                                   itemSpacing: 4) {
                             let name = $0
                             
                             Button(action: {
                                 select.append(name)
                             }) {
                                 Text(name)
-                                  .font(.system(size: 12))
-                                  .foregroundColor(Color(red: 0.47265625, green: 0.47265625, blue: 0.47265625))
-                                  .padding(10)
-                                  .background(RoundedRectangle(cornerRadius: 50)
-                                                         .foregroundColor(Color(red: 0.84375, green: 0.84375, blue: 0.84375)))
+                                    .font(.system(size: 12))
+                                    .foregroundColor(Color(red: 0.47265625, green: 0.47265625, blue: 0.47265625))
+                                    .padding(10)
+                                    .background(RoundedRectangle(cornerRadius: 50)
+                                        .foregroundColor(Color(red: 0.84375, green: 0.84375, blue: 0.84375)))
                             }
                         }.padding(.top)
                         
@@ -101,19 +101,19 @@ struct HobbySelectView: View {
                             .padding(.leading, 5)
                         
                         FlowLayout(mode: .scrollable,
-                           items: rare,
-                           itemSpacing: 4) {
+                                   items: rare,
+                                   itemSpacing: 4) {
                             let name = $0
                             
                             Button(action: {
                                 select.append(name)
                             }) {
                                 Text(name)
-                                  .font(.system(size: 12))
-                                  .foregroundColor(Color(red: 0.47265625, green: 0.47265625, blue: 0.47265625))
-                                  .padding(10)
-                                  .background(RoundedRectangle(cornerRadius: 50)
-                                                         .foregroundColor(Color(red: 0.84375, green: 0.84375, blue: 0.84375)))
+                                    .font(.system(size: 12))
+                                    .foregroundColor(Color(red: 0.47265625, green: 0.47265625, blue: 0.47265625))
+                                    .padding(10)
+                                    .background(RoundedRectangle(cornerRadius: 50)
+                                        .foregroundColor(Color(red: 0.84375, green: 0.84375, blue: 0.84375)))
                             }
                         }.padding(.top)
                         NavigationLink(destination: MapView(), label: {

@@ -28,27 +28,25 @@ struct MainView: View {
 //    }
     
     var body: some View {
-        
-        NavigationView {
-            ScrollView{
-                VStack{
+    
+        ScrollView{
+            VStack{
 
-                        ForEach(0..<5){_ in
-                            NavigationLink(destination: Text("프로필 슬라이드")) {
-                                CardView()
-                            }
-                            .background(RoundedRectangle(cornerRadius: 10)
-                                .stroke(Color(.sRGB,red: 150/255, green: 150/255, blue: 150/255, opacity: 0.5), lineWidth: 1)
-                            )
-                            .padding(6.0)
+                    ForEach(0..<5){_ in
+                        NavigationLink(destination: ProfileBoardView()) {
+                            CardView()
                         }
+                        .background(RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color(.sRGB,red: 150/255, green: 150/255, blue: 150/255, opacity: 0.5), lineWidth: 1)
+                        )
+                        .padding(6.0)
+                    }
 
-                    
-                }
-
-                .navigationTitle(Text("MainView"))
                 
             }
+
+            .navigationTitle(Text("MainView"))
+            
         }
     }
 }
