@@ -14,37 +14,37 @@ import SwiftUI
 
 
 struct MainView: View {
-//    let data: [cardData] = [
-//        cardData(group_title: "라이딩을 좋아해요", image_list: ["dotimg1", "dotimg2", "dotimg3"]),
-//        cardData(group_title: "축구를 좋아해요", image_list: ["dotimg1", "dotimg2", "dotimg3"]),
-//        cardData(group_title: "30분 거리에 있어요", image_list: ["dotimg1", "dotimg2", "dotimg3"]),
-//        cardData(group_title: "30분 거리에 있어요", image_list: ["dotimg1", "dotimg2", "dotimg3"]),
-//        cardData(group_title: "30분 거리에 있어요", image_list: ["dotimg1", "dotimg2", "dotimg3"]),
-//        cardData(group_title: "30분 거리에 있어요", image_list: ["dotimg1", "dotimg2", "dotimg3"]),
-//    ]
+    //    let data: [cardData] = [
+    //        cardData(group_title: "라이딩을 좋아해요", image_list: ["dotimg1", "dotimg2", "dotimg3"]),
+    //        cardData(group_title: "축구를 좋아해요", image_list: ["dotimg1", "dotimg2", "dotimg3"]),
+    //        cardData(group_title: "30분 거리에 있어요", image_list: ["dotimg1", "dotimg2", "dotimg3"]),
+    //        cardData(group_title: "30분 거리에 있어요", image_list: ["dotimg1", "dotimg2", "dotimg3"]),
+    //        cardData(group_title: "30분 거리에 있어요", image_list: ["dotimg1", "dotimg2", "dotimg3"]),
+    //        cardData(group_title: "30분 거리에 있어요", image_list: ["dotimg1", "dotimg2", "dotimg3"]),
+    //    ]
     
-//    init() {
-//        UITableView.appearance().separatorColor = .clear
-//    }
+    //    init() {
+    //        UITableView.appearance().separatorColor = .clear
+    //    }
     
     var body: some View {
-    
+        
         ScrollView{
             VStack{
-
-                    ForEach(0..<5){_ in
-                        NavigationLink(destination: ProfileBoardView()) {
-                            CardView()
-                        }
-                        .background(RoundedRectangle(cornerRadius: 10)
-                            .stroke(Color(.sRGB,red: 150/255, green: 150/255, blue: 150/255, opacity: 0.5), lineWidth: 1)
-                        )
-                        .padding(6.0)
+                
+                ForEach(0..<5){_ in
+                    NavigationLink(destination: ProfileBoardView()) {
+                        CardView()
                     }
-
+                    .background(RoundedRectangle(cornerRadius: 10)
+                        .stroke(Color(.sRGB,red: 150/255, green: 150/255, blue: 150/255, opacity: 0.5), lineWidth: 1)
+                    )
+                    .padding(6.0)
+                }
+                
                 
             }
-
+            
             .navigationTitle(Text("MainView"))
             
         }
@@ -54,23 +54,35 @@ struct MainView: View {
 
 
 struct CardView: View{
-//    var group_title:String
-//    var riding_characters: String
+    //    var group_title:String
+    //    var riding_characters: String
     
     var body: some View {
-        VStack{
-            Text("라이딩을 좋아해요")
-                .foregroundColor(.primary)
-                .padding(.leading, -150.0)
-            HStack {
-                ForEach(0..<5){_ in
-                    Image("dotimg5")
+        HStack {
+            VStack{
+                HStack {
+                    Text("라이딩을 좋아해요")
+                        .bold()
+                        .foregroundColor(.primary)
+                        .padding([.leading, .top], 5)
+                    Spacer()
                 }
-            Image("greaterthan")
+                HStack {
+                    ForEach(1..<6){ i in
+                        Image("dotimg\(i)")
+                            .frame(width:50, height: 70)
+                            .aspectRatio(contentMode: .fill)
+                    }
+                    Spacer()
+                }
             }
-            .padding(3.0)
+            .padding([.top, .bottom, .trailing])
+            .padding(.leading)
+            .frame(minWidth:250)
+            Image("greaterthan")
+                .padding(.trailing, 25)
+                
         }
-        .padding(8)
     }
 }
 
