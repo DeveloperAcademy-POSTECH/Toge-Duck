@@ -1,13 +1,16 @@
 //
-//  ProfileCardView.swift
+//  ProfileCardView2.swift
 //  togeduck
 //
-//  Created by ParkJunHyuk on 2022/04/11.
+//  Created by ParkJunHyuk on 2022/04/12.
 //
 
 import SwiftUI
 
-struct ProfileCardView: View {
+struct ProfileCardView2: View {
+    
+    
+    @ObservedObject var viewModel = ImageViewModel()
     
     var user : Member
 
@@ -16,7 +19,7 @@ struct ProfileCardView: View {
         GeometryReader { geometry in
             VStack {
                 
-                Text(user.introduction)
+                Text(viewModel.members[0].hobbies)
                     .font(.system(size: 15))
                     .padding(8.0)
                     .overlay(RoundedRectangle(cornerRadius: 10)
@@ -53,40 +56,14 @@ struct ProfileCardView: View {
                     
                 }
                 .padding(.bottom, 30)
-//                HStack{
-//                    RectangleImageView(post: user.hobbies)
-//                        .frame(width: 100, height: 100)
-//                        .padding(-5)
-//                }
-                
                 
                 GridView(post: user.hobbies)
-                    .frame(width: geometry.size.width, height: geometry.size.height/1.8)
+                    .frame(width: geometry.size.width, height: geometry.size.height/3.7)
                     
             }
         }
     }
 }
-
-//struct RectangleImageView: View {
-//
-//    var post : [Hobby]
-//
-//    var body: some View {
-//
-//        HStack {
-//            if post.count < 8 {
-//                ForEach(0..<post.count) { index in
-//                    userPostImageView(postImage: post[index].hobbyPost)
-//                }
-//            } else {
-//                ForEach(0..<8) { index in
-//                    userPostImageView(postImage: post[index].hobbyPost)
-//                }
-//            }
-//        }
-//    }
-//}
 
 struct HobbyList: View {
     
@@ -139,26 +116,18 @@ struct ProfileCardView_Previews: PreviewProvider {
 struct GridView: View {
     
     @State var count = 0
-    
     var post : [Hobby]
     
     let rows: [GridItem] = [
-//        GridItem(.adaptive(minimum: 80), spacing: 0)
-        GridItem(spacing: 0),
-        GridItem(spacing: 0),
-        GridItem(spacing: 0),
-        GridItem(spacing: 0)
-
+        GridItem(.adaptive(minimum: 80), spacing: 0)
     ]
-    
-//    var rows: [GridItem] = Array(repeating: .init(.flexible()), count: 4)
     
     var body: some View {
         VStack {
             LazyVGrid(columns: rows, alignment: .center, spacing: 0
             ) {
                 ForEach(post) { index in
-                    userPostImageView(count: $count, postImage: index.hobbyPost)
+                    userPostImageView(postImage: index.hobbyPost)
                         .frame(height: 100)
                 }
             }
@@ -168,17 +137,13 @@ struct GridView: View {
 }
 
 struct userPostImageView: View {
-    
-    @Binding var count : Int
+
     var postImage: [Post]
 
     var body: some View {
         ForEach(postImage) { index in
             index.postImage
                 .resizable()
-        }
-        .onAppear(){
-            count += 1
         }
     }
 }
