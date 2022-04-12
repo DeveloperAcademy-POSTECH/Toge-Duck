@@ -78,12 +78,16 @@ struct ProfileCardView: View {
 
 struct HobbyList: View {
     
+    @State var count = 0
     var name : [Hobby]
     
     var body: some View {
         
         ScrollView(.horizontal) {
             HStack {
+                
+                ForEach(name.last)
+                
                 ForEach(name) { index in
                     Text(index.hobbyName)
                         .padding(.horizontal)
@@ -91,7 +95,7 @@ struct HobbyList: View {
                         .background(Color("DarkGray"))
                         .foregroundColor(Color.white)
                         .clipShape(RoundedRectangle(cornerRadius: 30))
-                    
+
                 }
             }
         }
