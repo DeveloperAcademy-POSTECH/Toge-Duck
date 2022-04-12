@@ -20,7 +20,22 @@
                     {
                         "postTitle": "3.31 농구대항전",
                         "postContent": "쉐리님의 킬패스로 우리는 승리할 수 있었다..",
-                        "postImageName": "hobbyImage2-1"
+                        "postImageName": "hobbyImage1-3"
+                    },
+                    {
+                        "postTitle": "Lorem Ipsum",
+                        "postContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lectus ipsum, volutpat at rhoncus quis, accumsan ut risus. Morbi rhoncus pulvinar ante et aliquam. Duis feugiat vel nisl ut blandit. Cras tristique purus eu nulla eleifend tempor. Mauris vitae felis risus. Etiam elit mi, fermentum ut sapien nec, feugiat tempus arcu. Sed suscipit mauris velit, in efficitur justo mollis nec. In hac habitasse platea dictumst. Aliquam faucibus, ante sit amet elementum iaculis, velit mauris pellentesque urna, quis varius risus metus in felis. Suspendisse ut accumsan lacus. Suspendisse potenti.",
+                        "postImageName": "hobbyImage1-3"
+                    },
+                    {
+                        "postTitle": "Lorem Ipsum",
+                        "postContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lectus ipsum, volutpat at rhoncus quis, accumsan ut risus. Morbi rhoncus pulvinar ante et aliquam. Duis feugiat vel nisl ut blandit. Cras tristique purus eu nulla eleifend tempor. Mauris vitae felis risus. Etiam elit mi, fermentum ut sapien nec, feugiat tempus arcu. Sed suscipit mauris velit, in efficitur justo mollis nec. In hac habitasse platea dictumst. Aliquam faucibus, ante sit amet elementum iaculis, velit mauris pellentesque urna, quis varius risus metus in felis. Suspendisse ut accumsan lacus. Suspendisse potenti.",
+                        "postImageName": "hobbyImage1-3"
+                    },
+                    {
+                        "postTitle": "Lorem Ipsum",
+                        "postContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lectus ipsum, volutpat at rhoncus quis, accumsan ut risus. Morbi rhoncus pulvinar ante et aliquam. Duis feugiat vel nisl ut blandit. Cras tristique purus eu nulla eleifend tempor. Mauris vitae felis risus. Etiam elit mi, fermentum ut sapien nec, feugiat tempus arcu. Sed suscipit mauris velit, in efficitur justo mollis nec. In hac habitasse platea dictumst. Aliquam faucibus, ante sit amet elementum iaculis, velit mauris pellentesque urna, quis varius risus metus in felis. Suspendisse ut accumsan lacus. Suspendisse potenti.",
+                        "postImageName": "hobbyImage1-3"
                     }
                 ],
                 "isShown":true
@@ -29,9 +44,24 @@
                 "hobbyName": "락밴드",
                 "hobbyPost": [
                     {
+                        "postTitle": "Lorem Ipsum",
+                        "postContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lectus ipsum, volutpat at rhoncus quis, accumsan ut risus. Morbi rhoncus pulvinar ante et aliquam. Duis feugiat vel nisl ut blandit. Cras tristique purus eu nulla eleifend tempor. Mauris vitae felis risus. Etiam elit mi, fermentum ut sapien nec, feugiat tempus arcu. Sed suscipit mauris velit, in efficitur justo mollis nec. In hac habitasse platea dictumst. Aliquam faucibus, ante sit amet elementum iaculis, velit mauris pellentesque urna, quis varius risus metus in felis. Suspendisse ut accumsan lacus. Suspendisse potenti",
+                        "postImageName": "hobbyImage2-1"
+                    },
+                    {
                         "postTitle": "SURL 최고",
                         "postContent": "언제나와 같이 SURL의 콘서트는 최고였다",
-                        "postImageName": "hobbyImage1-1"
+                        "postImageName": "hobbyImage2-1"
+                    },
+                    {
+                        "postTitle": "Lorem Ipsum",
+                        "postContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lectus ipsum, volutpat at rhoncus quis, accumsan ut risus. Morbi rhoncus pulvinar ante et aliquam. Duis feugiat vel nisl ut blandit. Cras tristique purus eu nulla eleifend tempor. Mauris vitae felis risus. Etiam elit mi, fermentum ut sapien nec, feugiat tempus arcu. Sed suscipit mauris velit, in efficitur justo mollis nec. In hac habitasse platea dictumst. Aliquam faucibus, ante sit amet elementum iaculis, velit mauris pellentesque urna, quis varius risus metus in felis. Suspendisse ut accumsan lacus. Suspendisse potenti.",
+                        "postImageName": "hobbyImage2-1"
+                    },
+                    {
+                        "postTitle": "Lorem Ipsum",
+                        "postContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lectus ipsum, volutpat at rhoncus quis, accumsan ut risus. Morbi rhoncus pulvinar ante et aliquam. Duis feugiat vel nisl ut blandit. Cras tristique purus eu nulla eleifend tempor. Mauris vitae felis risus. Etiam elit mi, fermentum ut sapien nec, feugiat tempus arcu. Sed suscipit mauris velit, in efficitur justo mollis nec. In hac habitasse platea dictumst. Aliquam faucibus, ante sit amet elementum iaculis, velit mauris pellentesque urna, quis varius risus metus in felis. Suspendisse ut accumsan lacus. Suspendisse potenti.",
+                        "postImageName": "hobbyImage2-1"
                     }
                 ],
                 "isShown":false
