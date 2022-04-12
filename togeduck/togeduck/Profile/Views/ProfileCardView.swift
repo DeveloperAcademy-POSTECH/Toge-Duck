@@ -11,7 +11,7 @@ import SwiftUIFlowLayout
 struct ProfileCardView: View {
     
     var user : Member
-
+    
     var body: some View {
         
         GeometryReader { geometry in
@@ -24,7 +24,7 @@ struct ProfileCardView: View {
                         .stroke(Color(red: 0.216, green: 0.216, blue: 0.216))
                     )
                     .padding(.top, 20)
-
+                
                 user.image
                     .resizable()
                     .frame(width: 140, height: 180)
@@ -38,22 +38,9 @@ struct ProfileCardView: View {
                     .foregroundColor(Color.gray)
                     .padding(.top, -10)
                 
-                // SwiftUILowLayout 패키지를 사용해서 tag view 를 자동으로 생성
-//                FlowLayout(mode: .scrollable, items: user.hobbies, itemSpacing: 4) {
-//                    let name = $0
-//
-//                    Text(name.hobbyName)
-//                        .padding(.horizontal)
-//                        .frame(height: 35)
-//                        .background(Color("DarkGray"))
-//                        .foregroundColor(Color.white)
-//                        .clipShape(RoundedRectangle(cornerRadius: 30))
-//
-//                }.padding()
-                
                 HobbyList(name: user.hobbies)
                     .padding()
-                    
+                
                 HStack {
                     
                     Image(systemName: "heart.fill")
@@ -70,7 +57,7 @@ struct ProfileCardView: View {
                 
                 GridView(post: user.hobbies)
                     .frame(width: geometry.size.width, height: geometry.size.height/3.7)
-                    
+                
             }
         }
     }
@@ -83,17 +70,34 @@ struct HobbyList: View {
     
     var body: some View {
         
-        ScrollView(.horizontal) {
-            HStack {
-                
-                ForEach(name) { index in
-                    Text(index.hobbyName)
+        HStack {
+            if name.count > 3 {
+                ForEach(0..<3){ index in
+                    
+                    Text(name[index].hobbyName)
                         .padding(.horizontal)
                         .frame(height: 35)
                         .background(Color("DarkGray"))
                         .foregroundColor(Color.white)
                         .clipShape(RoundedRectangle(cornerRadius: 30))
-
+                }
+                
+                Image(systemName: "plus.circle")
+                    .resizable()
+                    .frame(width: 25, height: 25)
+                
+                Text("\(name.count-3)")
+                    .font(.system(size: 25))
+                
+            } else {
+                ForEach(0..<name.count){ index in
+                    
+                    Text(name[index].hobbyName)
+                        .padding(.horizontal)
+                        .frame(height: 35)
+                        .background(Color("DarkGray"))
+                        .foregroundColor(Color.white)
+                        .clipShape(RoundedRectangle(cornerRadius: 30))
                 }
             }
         }
@@ -114,16 +118,19 @@ struct GridView: View {
     
     let rows: [GridItem] = [
         GridItem(.adaptive(minimum: 80), spacing: 0)
-
+        
     ]
     
     var body: some View {
         VStack {
             LazyVGrid(columns: rows, alignment: .center, spacing: 0
             ) {
+                
                 ForEach(post) { index in
-
-                    userPostImageView(postImage: index.hobbyPost)
+                    
+                    let posts = index.hobbyPost
+                    
+                    userPostImageView(postImage: posts)
                         .frame(height: 100)
                 }
             }
@@ -133,9 +140,9 @@ struct GridView: View {
 }
 
 struct userPostImageView: View {
-
+    
     var postImage: [Post]
-
+    
     var body: some View {
         ForEach(postImage) { index in
             index.postImage

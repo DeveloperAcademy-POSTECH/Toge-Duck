@@ -35,7 +35,7 @@ struct Post: Hashable, Codable, Identifiable {
     var postTitle: String
     var postContent: String
     
-    private var postImageName: String
+    var postImageName: String
     var postImage: Image{
         Image(postImageName)
     }
