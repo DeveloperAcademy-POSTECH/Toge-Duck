@@ -16,6 +16,7 @@ struct togeduckApp: App {
             let viewModel = AppViewModel()
             ContentView()
                 .environmentObject(viewModel)
+
         }
     }
 }
