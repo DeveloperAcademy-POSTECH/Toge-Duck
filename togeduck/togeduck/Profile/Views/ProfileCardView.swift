@@ -86,8 +86,6 @@ struct HobbyList: View {
         ScrollView(.horizontal) {
             HStack {
                 
-                ForEach(name.last)
-                
                 ForEach(name) { index in
                     Text(index.hobbyName)
                         .padding(.horizontal)
