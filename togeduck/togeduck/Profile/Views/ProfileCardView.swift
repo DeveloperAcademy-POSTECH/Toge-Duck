@@ -17,26 +17,8 @@ struct ProfileCardView: View {
         GeometryReader { geometry in
             VStack {
                 
-                Text(user.introduction)
-                    .font(.system(size: 15))
-                    .padding(8.0)
-                    .overlay(RoundedRectangle(cornerRadius: 10)
-                        .stroke(Color(red: 0.216, green: 0.216, blue: 0.216))
-                    )
+                ProfileDetailView(member: user)
                     .padding(.top, 20)
-
-                user.image
-                    .resizable()
-                    .frame(width: 140, height: 180)
-                    .padding()
-                
-                Text(user.name)
-                    .font(.title)
-                    .padding(.top, -10)
-                
-                Text("\(user.distance)km 이내에 있어요")
-                    .foregroundColor(Color.gray)
-                    .padding(.top, -10)
                 
                 // SwiftUILowLayout 패키지를 사용해서 tag view 를 자동으로 생성
 //                FlowLayout(mode: .scrollable, items: user.hobbies, itemSpacing: 4) {
@@ -54,19 +36,19 @@ struct ProfileCardView: View {
                 HobbyList(name: user.hobbies)
                     .padding()
                     
-                HStack {
-                    
-                    Image(systemName: "heart.fill")
-                    
-                    Text("\(user.subscribes)")
-                        .padding(.trailing, 5)
-                    
-                    Image(systemName: "person.fill")
-                    
-                    Text("\(user.friends)")
-                    
-                }
-                .padding(.bottom, 30)
+//ㅋ                HStack {
+//ㅋ
+//ㅋ                    Image(systemName: "heart.fill")
+//ㅋ
+//ㅋ                    Text("\(user.subscribes)")
+//ㅋ                        .padding(.trailing, 5)
+//ㅋ
+//ㅋ                    Image(systemName: "person.fill")
+//ㅋ
+//ㅋ                    Text("\(user.friends)")
+//ㅋ
+//ㅋ                }
+//ㅋ                .padding(.bottom, 30)
                 
                 GridView(post: user.hobbies)
                     .frame(width: geometry.size.width, height: geometry.size.height/3.7)

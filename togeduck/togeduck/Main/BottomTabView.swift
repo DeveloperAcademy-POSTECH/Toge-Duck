@@ -20,7 +20,7 @@ struct BottomTabView: View {
                 }
                 .tag(0)
             
-            FeedView()
+            FeedView(members:members)
                 .tabItem{
                     Image(systemName: "highlighter")
                 }
@@ -33,7 +33,7 @@ struct BottomTabView: View {
                 .tag(2)
                 
             
-            ProfileView()
+            ProfileView(member:members[0])
                 .tabItem{
                     Image(systemName: "person.fill")
                 }

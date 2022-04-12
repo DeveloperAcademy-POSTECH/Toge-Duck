@@ -9,10 +9,10 @@ import SwiftUI
 
 struct ProfileBoardView: View {
     var body: some View {
-        NavigationView {
+//        NavigationView {
             TabView() {
                 ForEach(members) { index in
-                    NavigationLink(destination: ProfileView()){
+                    NavigationLink(destination: ProfileView(member: index)){
                         ProfileCardView(user: index)
                             .frame(maxWidth: .infinity, maxHeight: .infinity)
                             .background(Color.white)
@@ -25,10 +25,11 @@ struct ProfileBoardView: View {
             }
             .tabViewStyle(PageTabViewStyle())
             .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
-            .navigationBarHidden(true)
+//            .navigationBarHidden(true)
             
             Spacer(minLength: 10)
-        }
+//        }
+//        .navigationBarTitle("")
     }
 }
 
