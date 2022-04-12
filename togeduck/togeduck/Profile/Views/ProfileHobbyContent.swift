@@ -21,8 +21,6 @@ struct ProfileHobbyContent: View {
                             .foregroundColor(Color.black)
                     }    
                 }
-//                ProfileHobbyCard(post: post)
-//                    .padding([.top, .bottom], 10)
             }
             .padding([.leading, .trailing], 10)
         }

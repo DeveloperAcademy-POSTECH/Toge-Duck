@@ -9,8 +9,8 @@ import SwiftUI
 
 struct ProfileView: View {
     
-//    @State var isHide = false
     @State var hobbyNum : Int = 0
+    var member: Member
     var body: some View {
         VStack{
             VStack{
@@ -21,27 +21,23 @@ struct ProfileView: View {
             }
             ScrollView{
                 VStack{
-                    ProfileDetailView(member: members[0])
+                    ProfileDetailView(member: member)
                     LazyVStack(pinnedViews:[.sectionHeaders]){
-                        Section(header: ProfileHobbyButton(hobbyNum: $hobbyNum, member:members[0])
+                        Section(header: ProfileHobbyButton(hobbyNum: $hobbyNum, member:member)
                             .background(Color.white)){
-                            ProfileHobbyContent(member: members[0], hobby: members[0].hobbies[hobbyNum])
+                            ProfileHobbyContent(member: member, hobby: member.hobbies[hobbyNum])
                         }
                     }
                 }
-                .padding(.top, 30)
+                .padding(.top, 20)
             }
-            
-    //        .frame(maxHeight: .infinity)
-    //        .edgesIgnoringSafeArea(.top)
-    //        .background(Color.white)
         }
-        }
+    }
         
 }
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView()
+        ProfileView(member: members[0])
     }
 }
