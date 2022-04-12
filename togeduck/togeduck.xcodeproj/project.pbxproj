@@ -22,6 +22,7 @@
 		F8AE9B8427FD182300834B44 /* togeduckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AE9B8327FD182300834B44 /* togeduckTests.swift */; };
 		F8AE9B8E27FD182300834B44 /* togeduckUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AE9B8D27FD182300834B44 /* togeduckUITests.swift */; };
 		F8AE9B9027FD182300834B44 /* togeduckUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AE9B8F27FD182300834B44 /* togeduckUITestsLaunchTests.swift */; };
+		F8BB693B28051D1900533279 /* MainCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BB693A28051D1900533279 /* MainCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		F8AE9B8927FD182300834B44 /* togeduckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = togeduckUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8AE9B8D27FD182300834B44 /* togeduckUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = togeduckUITests.swift; sourceTree = "<group>"; };
 		F8AE9B8F27FD182300834B44 /* togeduckUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = togeduckUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F8BB693A28051D1900533279 /* MainCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 		F8AE9B7127FD182000834B44 /* togeduck */ = {
 			isa = PBXGroup;
 			children = (
+				F8BB693728051C7600533279 /* Models */,
 				3E37AED427FD23C600FF9520 /* SignUp */,
 				3E37AED327FD23BC00FF9520 /* Feed */,
 				3E37AED227FD1FAE00FF9520 /* Main */,
@@ -171,6 +174,14 @@
 				F8AE9B8F27FD182300834B44 /* togeduckUITestsLaunchTests.swift */,
 			);
 			path = togeduckUITests;
+			sourceTree = "<group>";
+		};
+		F8BB693728051C7600533279 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F8BB693A28051D1900533279 /* MainCard.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,6 +329,7 @@
 				F6D8200D27FFD34400CB5747 /* HobbySelectView.swift in Sources */,
 				F6D8200B27FFD32000CB5747 /* RegisterView.swift in Sources */,
 				F8AE9B7527FD182000834B44 /* ContentView.swift in Sources */,
+				F8BB693B28051D1900533279 /* MainCard.swift in Sources */,
 				F8AE9B7327FD182000834B44 /* togeduckApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

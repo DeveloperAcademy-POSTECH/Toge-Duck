@@ -7,32 +7,17 @@
 
 import SwiftUI
 
-//struct cardData {
-//    var group_title: String
-//    var image_list: [String]
-//}
 
 
 struct MainView: View {
-//    let data: [cardData] = [
-//        cardData(group_title: "라이딩을 좋아해요", image_list: ["dotimg1", "dotimg2", "dotimg3"]),
-//        cardData(group_title: "축구를 좋아해요", image_list: ["dotimg1", "dotimg2", "dotimg3"]),
-//        cardData(group_title: "30분 거리에 있어요", image_list: ["dotimg1", "dotimg2", "dotimg3"]),
-//        cardData(group_title: "30분 거리에 있어요", image_list: ["dotimg1", "dotimg2", "dotimg3"]),
-//        cardData(group_title: "30분 거리에 있어요", image_list: ["dotimg1", "dotimg2", "dotimg3"]),
-//        cardData(group_title: "30분 거리에 있어요", image_list: ["dotimg1", "dotimg2", "dotimg3"]),
-//    ]
-    
-//    init() {
-//        UITableView.appearance().separatorColor = .clear
-//    }
-    
+    let cards: [MainCardData]
+
     var body: some View {
-            ScrollView{
+        ScrollView(.vertical, showsIndicators: false, content:{
                 VStack{
-                        ForEach(0..<5){_ in
+                    ForEach(cards){ card in
                             NavigationLink(destination: Text("프로필 슬라이드")) {
-                                CardView()
+                                CardView(card: card)
                             }
                             
                             .background(RoundedRectangle(cornerRadius: 20)
@@ -49,27 +34,27 @@ struct MainView: View {
                         }
                 }
                 .navigationTitle(Text("MainView"))
-            }
+            })
     }
 }
 
 
 
 struct CardView: View{
-//    var group_title:String
-//    var riding_characters: String
+    let card: MainCardData
+//    let dotimgs: MainCardData.dotimgs
     
     var body: some View {
         VStack{
-            Text("라이딩을 좋아해요")
+            Text(card.group_title)
                 .foregroundColor(.primary)
                 .padding(.leading, -140.0)
                 .padding(.top, 16.0)
                 .padding(.bottom, -6)
                 .font(.system(size: 18, weight: .semibold))
             HStack {
-                ForEach(0..<5){_ in
-                    Image("dotimg5")
+                ForEach(card.dotimgs, id: \.self){ dotimg in
+                    Image(dotimg)
                 }
             Image("greaterthan")
             }
@@ -82,9 +67,10 @@ struct CardView: View{
 }
 
 struct MainView_Previews: PreviewProvider {
+//    static var card = MainCardData.sampleData[0]
     static var previews: some View {
         Group {
-            MainView()
+            MainView(cards: MainCardData.sampleData)
         }
     }
 }
