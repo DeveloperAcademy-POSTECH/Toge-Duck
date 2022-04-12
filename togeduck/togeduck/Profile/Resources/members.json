@@ -20,7 +20,7 @@
                     {
                         "postTitle": "3.31 농구대항전",
                         "postContent": "쉐리님의 킬패스로 우리는 승리할 수 있었다..",
-                        "postImageName": "hobbyImage1-2"
+                        "postImageName": "hobbyImage2-1"
                     }
                 ],
                 "isShown":true
@@ -31,7 +31,7 @@
                     {
                         "postTitle": "SURL 최고",
                         "postContent": "언제나와 같이 SURL의 콘서트는 최고였다",
-                        "postImageName": "hobbyImage2-1"
+                        "postImageName": "hobbyImage1-1"
                     }
                 ],
                 "isShown":false
@@ -39,6 +39,16 @@
             {
                 "hobbyName": "미식축구",
                 "hobbyPost": [
+                    {
+                        "postTitle": "SURL 최고",
+                        "postContent": "언제나와 같이 SURL의 콘서트는 최고였다",
+                        "postImageName": "hobbyImage2-1"
+                    },
+                    {
+                        "postTitle": "SURL 최고",
+                        "postContent": "언제나와 같이 SURL의 콘서트는 최고였다",
+                        "postImageName": "hobbyImage1-1"
+                    },
                     {
                         "postTitle": "SURL 최고",
                         "postContent": "언제나와 같이 SURL의 콘서트는 최고였다",
@@ -53,11 +63,23 @@
                     {
                         "postTitle": "SURL 최고",
                         "postContent": "언제나와 같이 SURL의 콘서트는 최고였다",
-                        "postImageName": "hobbyImage2-1"
+                        "postImageName": "hobbyImage1-1"
                     }
                 ],
                 "isShown":false
-            }
+            },
+            {
+                "hobbyName": "누워있기",
+                "hobbyPost": [
+                    {
+                        "postTitle": "SURL 최고",
+                        "postContent": "언제나와 같이 SURL의 콘서트는 최고였다",
+                        "postImageName": "hobbyImage1-1"
+                    }
+                ],
+                "isShown":false
+            },
+            
         ]
     },
     {
