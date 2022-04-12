@@ -14,13 +14,13 @@ struct BottomTabView: View {
     var body: some View {
         
         TabView(selection: $selection) {
-            ProfileBoardView()
+            MainView()
                 .tabItem{
                     Image(systemName: "house")
                 }
                 .tag(0)
             
-            ProfileView()
+            ProfileBoardView()
                 .tabItem{
                     Image(systemName: "highlighter")
                 }
