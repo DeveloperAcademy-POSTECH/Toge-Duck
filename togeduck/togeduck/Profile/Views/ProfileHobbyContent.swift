@@ -13,11 +13,13 @@ struct ProfileHobbyContent: View {
     var body: some View {
         VStack{
             ForEach(hobby.hobbyPost){ post in
-                Button(action: {}){
-                    ProfileHobbyCard(post: post)
-                        .padding([.top, .bottom], 10)
-                        .foregroundColor(Color.black)
-                        
+                Button(action: {
+                }){
+                    NavigationLink(destination: ContentDetailView(member: member, hobby: hobby, post: post)){
+                        ProfileHobbyCard(post: post)
+                            .padding([.top, .bottom], 10)
+                            .foregroundColor(Color.black)
+                    }    
                 }
 //                ProfileHobbyCard(post: post)
 //                    .padding([.top, .bottom], 10)
