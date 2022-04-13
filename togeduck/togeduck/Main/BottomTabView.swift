@@ -14,7 +14,7 @@ struct BottomTabView: View {
     var body: some View {
         
         TabView(selection: $selection) {
-            MainView()
+            MainView(cards: MainCardData.sampleData)
                 .tabItem{
                     Image(systemName: "house")
                 }
