@@ -18,7 +18,7 @@ struct MainCardData: Identifiable {
         self.dotimgs = dotimgs
     }
 }
-e
+
 extension MainCardData {
     static let sampleData: [MainCardData] =
     [
