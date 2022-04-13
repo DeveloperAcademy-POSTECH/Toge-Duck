@@ -12,12 +12,23 @@ struct MapView: View {
     @StateObject private var viewModel = MapViewModel()
     
     var body: some View {
-        Map(coordinateRegion: $viewModel.region, showsUserLocation: true)
-            .ignoresSafeArea()
-            .accentColor(Color(.systemPink))
-            .onAppear {
-                viewModel.checkIfLocationServicesIsEnabled()
-            }
+        ZStack {
+            Map(coordinateRegion: $viewModel.region, showsUserLocation: true)
+                .ignoresSafeArea()
+                .accentColor(Color(.systemPink))
+                .onAppear {
+                    viewModel.checkIfLocationServicesIsEnabled()
+                }
+            NavigationLink(destination: BottomTabView(), label: {
+                Text("다음")
+                    .font(.headline)
+                    .foregroundColor(.white)
+                    .frame(width: 360, height: 50)
+                    .background(Color.blue)
+                    .clipShape(Capsule())
+                    .padding()
+            })
+        }
     }
 }
 

@@ -1,0 +1,300 @@
+[
+    {
+        "name": "Id",
+        "introduction": "개성왕만두 쵝오",
+        "id": 1,
+        "age": 23,
+        "subscribes": 23,
+        "friends": 8,
+        "distance" : 10,
+        "imageName": "profileImage1",
+        "hobbies": [
+            {
+                "hobbyName": "농구",
+                "hobbyPost": [
+                    {
+                        "postTitle": "3.30 농구대항전",
+                        "postContent": "니로님의 킬패스로 우리는 승리할 수 있었다..",
+                        "postImageName": "hobbyImage1-1"
+                    },
+                    {
+                        "postTitle": "3.31 농구대항전",
+                        "postContent": "쉐리님의 킬패스로 우리는 승리할 수 있었다..",
+                        "postImageName": "hobbyImage1-3"
+                    },
+                    {
+                        "postTitle": "Lorem Ipsum",
+                        "postContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lectus ipsum, volutpat at rhoncus quis, accumsan ut risus. Morbi rhoncus pulvinar ante et aliquam. Duis feugiat vel nisl ut blandit. Cras tristique purus eu nulla eleifend tempor. Mauris vitae felis risus. Etiam elit mi, fermentum ut sapien nec, feugiat tempus arcu. Sed suscipit mauris velit, in efficitur justo mollis nec. In hac habitasse platea dictumst. Aliquam faucibus, ante sit amet elementum iaculis, velit mauris pellentesque urna, quis varius risus metus in felis. Suspendisse ut accumsan lacus. Suspendisse potenti.",
+                        "postImageName": "hobbyImage1-3"
+                    },
+                    {
+                        "postTitle": "Lorem Ipsum",
+                        "postContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lectus ipsum, volutpat at rhoncus quis, accumsan ut risus. Morbi rhoncus pulvinar ante et aliquam. Duis feugiat vel nisl ut blandit. Cras tristique purus eu nulla eleifend tempor. Mauris vitae felis risus. Etiam elit mi, fermentum ut sapien nec, feugiat tempus arcu. Sed suscipit mauris velit, in efficitur justo mollis nec. In hac habitasse platea dictumst. Aliquam faucibus, ante sit amet elementum iaculis, velit mauris pellentesque urna, quis varius risus metus in felis. Suspendisse ut accumsan lacus. Suspendisse potenti.",
+                        "postImageName": "hobbyImage1-3"
+                    },
+                    {
+                        "postTitle": "Lorem Ipsum",
+                        "postContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lectus ipsum, volutpat at rhoncus quis, accumsan ut risus. Morbi rhoncus pulvinar ante et aliquam. Duis feugiat vel nisl ut blandit. Cras tristique purus eu nulla eleifend tempor. Mauris vitae felis risus. Etiam elit mi, fermentum ut sapien nec, feugiat tempus arcu. Sed suscipit mauris velit, in efficitur justo mollis nec. In hac habitasse platea dictumst. Aliquam faucibus, ante sit amet elementum iaculis, velit mauris pellentesque urna, quis varius risus metus in felis. Suspendisse ut accumsan lacus. Suspendisse potenti.",
+                        "postImageName": "hobbyImage1-3"
+                    }
+                ],
+                "isShown":true
+            },
+            {
+                "hobbyName": "락밴드",
+                "hobbyPost": [
+                    {
+                        "postTitle": "Lorem Ipsum",
+                        "postContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lectus ipsum, volutpat at rhoncus quis, accumsan ut risus. Morbi rhoncus pulvinar ante et aliquam. Duis feugiat vel nisl ut blandit. Cras tristique purus eu nulla eleifend tempor. Mauris vitae felis risus. Etiam elit mi, fermentum ut sapien nec, feugiat tempus arcu. Sed suscipit mauris velit, in efficitur justo mollis nec. In hac habitasse platea dictumst. Aliquam faucibus, ante sit amet elementum iaculis, velit mauris pellentesque urna, quis varius risus metus in felis. Suspendisse ut accumsan lacus. Suspendisse potenti",
+                        "postImageName": "hobbyImage2-1"
+                    },
+                    {
+                        "postTitle": "SURL 최고",
+                        "postContent": "언제나와 같이 SURL의 콘서트는 최고였다",
+                        "postImageName": "hobbyImage2-1"
+                    },
+                    {
+                        "postTitle": "Lorem Ipsum",
+                        "postContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lectus ipsum, volutpat at rhoncus quis, accumsan ut risus. Morbi rhoncus pulvinar ante et aliquam. Duis feugiat vel nisl ut blandit. Cras tristique purus eu nulla eleifend tempor. Mauris vitae felis risus. Etiam elit mi, fermentum ut sapien nec, feugiat tempus arcu. Sed suscipit mauris velit, in efficitur justo mollis nec. In hac habitasse platea dictumst. Aliquam faucibus, ante sit amet elementum iaculis, velit mauris pellentesque urna, quis varius risus metus in felis. Suspendisse ut accumsan lacus. Suspendisse potenti.",
+                        "postImageName": "hobbyImage2-1"
+                    },
+                    {
+                        "postTitle": "Lorem Ipsum",
+                        "postContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lectus ipsum, volutpat at rhoncus quis, accumsan ut risus. Morbi rhoncus pulvinar ante et aliquam. Duis feugiat vel nisl ut blandit. Cras tristique purus eu nulla eleifend tempor. Mauris vitae felis risus. Etiam elit mi, fermentum ut sapien nec, feugiat tempus arcu. Sed suscipit mauris velit, in efficitur justo mollis nec. In hac habitasse platea dictumst. Aliquam faucibus, ante sit amet elementum iaculis, velit mauris pellentesque urna, quis varius risus metus in felis. Suspendisse ut accumsan lacus. Suspendisse potenti.",
+                        "postImageName": "hobbyImage2-1"
+                    }
+                ],
+                "isShown":false
+            },
+            {
+                "hobbyName": "미식축구",
+                "hobbyPost": [
+                    {
+                        "postTitle": "SURL 최고",
+                        "postContent": "언제나와 같이 SURL의 콘서트는 최고였다",
+                        "postImageName": "hobbyImage2-1"
+                    },
+                    {
+                        "postTitle": "SURL 최고",
+                        "postContent": "언제나와 같이 SURL의 콘서트는 최고였다",
+                        "postImageName": "hobbyImage1-1"
+                    },
+                    {
+                        "postTitle": "SURL 최고",
+                        "postContent": "언제나와 같이 SURL의 콘서트는 최고였다",
+                        "postImageName": "hobbyImage2-1"
+                    }
+                ],
+                "isShown":false
+            },
+            {
+                "hobbyName": "종이접기",
+                "hobbyPost": [
+                    {
+                        "postTitle": "SURL 최고",
+                        "postContent": "언제나와 같이 SURL의 콘서트는 최고였다",
+                        "postImageName": "hobbyImage1-1"
+                    }
+                ],
+                "isShown":false
+            },
+            {
+                "hobbyName": "누워있기",
+                "hobbyPost": [
+                    {
+                        "postTitle": "SURL 최고",
+                        "postContent": "언제나와 같이 SURL의 콘서트는 최고였다",
+                        "postImageName": "hobbyImage1-1"
+                    }
+                ],
+                "isShown":false
+            },
+            
+        ]
+    },
+    {
+        "name": "Skipp",
+        "introduction": "개성왕만두 디자이너~",
+        "id": 2,
+        "age": 23,
+        "subscribes": 27,
+        "friends": 20,
+        "distance" : 15,
+        "imageName": "profileImage2",
+        "hobbies": [
+            {
+                "hobbyName": "농구",
+                "hobbyPost": [
+                    {
+                        "postTitle": "3.30 농구대항전",
+                        "postContent": "니로님의 킬패스로 우리는 승리할 수 있었다..",
+                        "postImageName": "hobbyImage1-1"
+                    },
+                    {
+                        "postTitle": "3.31 농구대항전",
+                        "postContent": "쉐리님의 킬패스로 우리는 승리할 수 있었다..",
+                        "postImageName": "hobbyImage1-2"
+                    }
+                ]
+            },
+            {
+                "hobbyName": "락밴드",
+                "hobbyPost": [
+                    {
+                        "postTitle": "SURL 최고",
+                        "postContent": "언제나와 같이 SURL의 콘서트는 최고였다",
+                        "postImageName": "hobbyImage2-1"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Niro",
+        "introduction": "개성왕만두 핵심콕콕이",
+        "id": 3,
+        "age": 23,
+        "subscribes": 10234,
+        "friends": 2912,
+        "distance" : 21,
+        "imageName": "profileImage3",
+        "hobbies": [
+            {
+                "hobbyName": "농구",
+                "hobbyPost": [
+                    {
+                        "postTitle": "3.30 농구대항전",
+                        "postContent": "니로님의 킬패스로 우리는 승리할 수 있었다..",
+                        "postImageName": "hobbyImage1-1"
+                    },
+                    {
+                        "postTitle": "3.31 농구대항전",
+                        "postContent": "쉐리님의 킬패스로 우리는 승리할 수 있었다..",
+                        "postImageName": "hobbyImage1-2"
+                    }
+                ]
+            },
+            {
+                "hobbyName": "락밴드",
+                "hobbyPost": [
+                    {
+                        "postTitle": "SURL 최고",
+                        "postContent": "언제나와 같이 SURL의 콘서트는 최고였다",
+                        "postImageName": "hobbyImage2-1"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Sherry",
+        "introduction": "개성왕만두 왕만두",
+        "id": 4,
+        "age": 23,
+        "subscribes": 102,
+        "friends": 50,
+        "distance" : 33,
+        "imageName": "profileImage4",
+        "hobbies": [
+            {
+                "hobbyName": "농구",
+                "hobbyPost": [
+                    {
+                        "postTitle": "3.30 농구대항전",
+                        "postContent": "니로님의 킬패스로 우리는 승리할 수 있었다..",
+                        "postImageName": "hobbyImage1-1"
+                    },
+                    {
+                        "postTitle": "3.31 농구대항전",
+                        "postContent": "쉐리님의 킬패스로 우리는 승리할 수 있었다..",
+                        "postImageName": "hobbyImage1-2"
+                    }
+                ]
+            },
+            {
+                "hobbyName": "락밴드",
+                "hobbyPost": [
+                    {
+                        "postTitle": "SURL 최고",
+                        "postContent": "언제나와 같이 SURL의 콘서트는 최고였다",
+                        "postImageName": "hobbyImage2-1"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Haru",
+        "introduction": "개성왕만두 스마일",
+        "id": 5,
+        "age": 23,
+        "subscribes": 2291,
+        "friends": 240,
+        "distance" : 19,
+        "imageName": "profileImage5",
+        "hobbies": [
+            {
+                "hobbyName": "농구",
+                "hobbyPost": [
+                    {
+                        "postTitle": "3.30 농구대항전",
+                        "postContent": "니로님의 킬패스로 우리는 승리할 수 있었다..",
+                        "postImageName": "hobbyImage1-1"
+                    },
+                    {
+                        "postTitle": "3.31 농구대항전",
+                        "postContent": "쉐리님의 킬패스로 우리는 승리할 수 있었다..",
+                        "postImageName": "hobbyImage1-2"
+                    }
+                ]
+            },
+            {
+                "hobbyName": "락밴드",
+                "hobbyPost": [
+                    {
+                        "postTitle": "SURL 최고",
+                        "postContent": "언제나와 같이 SURL의 콘서트는 최고였다",
+                        "postImageName": "hobbyImage2-1"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Coby",
+        "introduction": "개성왕만두 기술자",
+        "id": 6,
+        "age": 23,
+        "subscribes": 591,
+        "friends": 241,
+        "distance" : 25,
+        "imageName": "profileImage6",
+        "hobbies": [
+            {
+                "hobbyName": "농구",
+                "hobbyPost": [
+                    {
+                        "postTitle": "3.30 농구대항전",
+                        "postContent": "니로님의 킬패스로 우리는 승리할 수 있었다..",
+                        "postImageName": "hobbyImage1-1"
+                    },
+                    {
+                        "postTitle": "3.31 농구대항전",
+                        "postContent": "쉐리님의 킬패스로 우리는 승리할 수 있었다..",
+                        "postImageName": "hobbyImage1-2"
+                    }
+                ]
+            },
+            {
+                "hobbyName": "락밴드",
+                "hobbyPost": [
+                    {
+                        "postTitle": "SURL 최고",
+                        "postContent": "언제나와 같이 SURL의 콘서트는 최고였다",
+                        "postImageName": "hobbyImage2-1"
+                    }
+                ]
+            }
+        ]
+    },
+]

@@ -41,8 +41,8 @@ struct MainView: View {
 
 
 struct CardView: View{
+
     let card: MainCardData
-//    let dotimgs: MainCardData.dotimgs
     
     var body: some View {
         VStack{
@@ -55,19 +55,23 @@ struct CardView: View{
             HStack {
                 ForEach(card.dotimgs, id: \.self){ dotimg in
                     Image(dotimg)
+                            .frame(width:50, height: 70)
+                            .aspectRatio(contentMode: .fill)
                 }
-            Image("greaterthan")
+              Spacer()
             }
-            .padding(9.0)
+
+            .padding([.top, .bottom, .trailing])
+            .padding(.leading)
+            .frame(minWidth:250)
+            Image("greaterthan")
+                .padding(.trailing, 25)
+                
         }
-        .padding(4)
-        .padding(.horizontal, 10.0)
-        
     }
 }
 
 struct MainView_Previews: PreviewProvider {
-//    static var card = MainCardData.sampleData[0]
     static var previews: some View {
         Group {
             MainView(cards: MainCardData.sampleData)
