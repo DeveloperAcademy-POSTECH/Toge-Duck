@@ -16,7 +16,7 @@ struct MainView: View {
         ScrollView(.vertical, showsIndicators: false, content:{
                 VStack{
                     ForEach(cards){ card in
-                            NavigationLink(destination: Text("프로필 슬라이드")) {
+                            NavigationLink(destination: ProfileBoardView()) {
                                 CardView(card: card)
                             }
                             
