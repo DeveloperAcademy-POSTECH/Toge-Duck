@@ -10,7 +10,7 @@ import SwiftUI
 struct ProfileBoardView: View {
     var body: some View {
         
-        NavigationView {
+//        NavigationView {
             GeometryReader { geometry in
                 TabView() {
                     ForEach(members) { index in
@@ -27,11 +27,10 @@ struct ProfileBoardView: View {
                 }
                 .tabViewStyle(PageTabViewStyle())
                 .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
-                .navigationBarHidden(true)
                 
 //                Spacer(minLength: 10)
             }
-        }
+//        }
     }
 }
 

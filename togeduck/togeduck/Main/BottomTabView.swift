@@ -20,7 +20,7 @@ struct BottomTabView: View {
                 }
                 .tag(0)
             
-            ProfileView()
+            MainView()
                 .tabItem{
                     Image(systemName: "highlighter")
                 }
