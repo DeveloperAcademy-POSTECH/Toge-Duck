@@ -53,12 +53,6 @@ struct ProfileCardView: View {
                     
                 }
                 .padding(.bottom, 30)
-//                HStack{
-//                    RectangleImageView(post: user.hobbies)
-//                        .frame(width: 100, height: 100)
-//                        .padding(-5)
-//                }
-                
                 
                 GridView(post: user.hobbies)
                     .frame(width: geometry.size.width, height: geometry.size.height/1.8)
@@ -67,26 +61,6 @@ struct ProfileCardView: View {
         }
     }
 }
-
-//struct RectangleImageView: View {
-//
-//    var post : [Hobby]
-//
-//    var body: some View {
-//
-//        HStack {
-//            if post.count < 8 {
-//                ForEach(0..<post.count) { index in
-//                    userPostImageView(postImage: post[index].hobbyPost)
-//                }
-//            } else {
-//                ForEach(0..<8) { index in
-//                    userPostImageView(postImage: post[index].hobbyPost)
-//                }
-//            }
-//        }
-//    }
-//}
 
 struct HobbyList: View {
     
@@ -143,15 +117,12 @@ struct GridView: View {
     var post : [Hobby]
     
     let rows: [GridItem] = [
-//        GridItem(.adaptive(minimum: 80), spacing: 0)
         GridItem(spacing: 0),
         GridItem(spacing: 0),
         GridItem(spacing: 0),
         GridItem(spacing: 0)
 
     ]
-    
-//    var rows: [GridItem] = Array(repeating: .init(.flexible()), count: 4)
     
     var body: some View {
         VStack {
