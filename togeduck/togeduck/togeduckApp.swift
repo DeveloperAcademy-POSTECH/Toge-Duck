@@ -13,6 +13,9 @@ struct togeduckApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     var body: some Scene {
         WindowGroup {
+
+//             MainView(cards: MainCardData.sampleData)
+          
             let viewModel = AppViewModel()
             ContentView()
                 .environmentObject(viewModel)

@@ -7,75 +7,60 @@
 
 import SwiftUI
 
-//struct cardData {
-//    var group_title: String
-//    var image_list: [String]
-//}
 
 
 struct MainView: View {
-    //    let data: [cardData] = [
-    //        cardData(group_title: "라이딩을 좋아해요", image_list: ["dotimg1", "dotimg2", "dotimg3"]),
-    //        cardData(group_title: "축구를 좋아해요", image_list: ["dotimg1", "dotimg2", "dotimg3"]),
-    //        cardData(group_title: "30분 거리에 있어요", image_list: ["dotimg1", "dotimg2", "dotimg3"]),
-    //        cardData(group_title: "30분 거리에 있어요", image_list: ["dotimg1", "dotimg2", "dotimg3"]),
-    //        cardData(group_title: "30분 거리에 있어요", image_list: ["dotimg1", "dotimg2", "dotimg3"]),
-    //        cardData(group_title: "30분 거리에 있어요", image_list: ["dotimg1", "dotimg2", "dotimg3"]),
-    //    ]
-    
-    //    init() {
-    //        UITableView.appearance().separatorColor = .clear
-    //    }
-    
+    let cards: [MainCardData]
+
     var body: some View {
-        
-        ScrollView{
-            VStack{
-                
-                ForEach(0..<5){_ in
-                    NavigationLink(destination: ProfileBoardView()) {
-                        CardView()
-                    }
-                    .background(RoundedRectangle(cornerRadius: 10)
-                        .stroke(Color(.sRGB,red: 150/255, green: 150/255, blue: 150/255, opacity: 0.5), lineWidth: 1)
-                    )
-                    .padding(6.0)
+        ScrollView(.vertical, showsIndicators: false, content:{
+                VStack{
+                    ForEach(cards){ card in
+                            NavigationLink(destination: Text("프로필 슬라이드")) {
+                                CardView(card: card)
+                            }
+                            
+                            .background(RoundedRectangle(cornerRadius: 20)
+                                .stroke(Color(.sRGB,red: 150/255, green: 150/255, blue: 150/255, opacity: 0.5), lineWidth: 1)
+                                .shadow(color: Color.white, radius: 3, x: 3, y: 3)
+                                .shadow(color: Color.gray, radius: 5, x: 0, y: 0)
+                            )
+                            .background(Color.white)
+                            .background(RoundedRectangle(cornerRadius: 30)
+                                .stroke(Color(.sRGB,red: 150/255, green: 150/255, blue: 150/255, opacity: 0.5), lineWidth: 1)
+                                .shadow(color: Color.black, radius: 6, x: 0, y: 0)
+                            )
+                            .padding(6.0)
+                        }
                 }
-                
-                
-            }
-            
-            .navigationTitle(Text("MainView"))
-            
-        }
+                .navigationTitle(Text("MainView"))
+            })
     }
 }
 
 
 
 struct CardView: View{
-    //    var group_title:String
-    //    var riding_characters: String
+
+    let card: MainCardData
     
     var body: some View {
-        HStack {
-            VStack{
-                HStack {
-                    Text("라이딩을 좋아해요")
-                        .bold()
-                        .foregroundColor(.primary)
-                        .padding([.leading, .top], 5)
-                    Spacer()
-                }
-                HStack {
-                    ForEach(1..<6){ i in
-                        Image("dotimg\(i)")
+        VStack{
+            Text(card.group_title)
+                .foregroundColor(.primary)
+                .padding(.leading, -140.0)
+                .padding(.top, 16.0)
+                .padding(.bottom, -6)
+                .font(.system(size: 18, weight: .semibold))
+            HStack {
+                ForEach(card.dotimgs, id: \.self){ dotimg in
+                    Image(dotimg)
                             .frame(width:50, height: 70)
                             .aspectRatio(contentMode: .fill)
-                    }
-                    Spacer()
                 }
+              Spacer()
             }
+
             .padding([.top, .bottom, .trailing])
             .padding(.leading)
             .frame(minWidth:250)
@@ -89,7 +74,7 @@ struct CardView: View{
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            MainView()
+            MainView(cards: MainCardData.sampleData)
         }
     }
 }
