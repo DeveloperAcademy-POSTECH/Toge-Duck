@@ -66,6 +66,7 @@ struct FeedView: View {
             }//VStack
         }//ScrollView
         .padding(16)
+        .navigationBarTitle(Text("피드"), displayMode: .inline)
     }//body
 }//struct
 

@@ -10,6 +10,9 @@ import SwiftUI
 
 
 struct MainView: View {
+    
+    @State var tabNum = 0
+    
     let cards: [MainCardData]
     
     var body: some View {
@@ -30,8 +33,12 @@ struct MainView: View {
                     .padding(6.0)
                 }
             }
-            .navigationTitle(Text("MainView"))
+            .navigationBarBackButtonHidden(true)
+//            .navigationBarHidden(true)
+//            .navigationBarTitle(Text("투게덕"), displayMode: .inline)
+//            .navigationBarItems(leading: Text(""))
         })
+        
     }
 }
 
@@ -73,10 +80,11 @@ struct CardView: View{
                     .padding(.leading)
                     .frame(minWidth:250)
                 }
-                Image("greaterthan")
+                Image(systemName: "chevron.right")
                     .padding(.trailing, 25)
             }
         }
+//        .navigationTitle("투게덕")
     }
 }
 

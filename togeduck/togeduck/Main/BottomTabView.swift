@@ -10,7 +10,9 @@ import SwiftUI
 struct BottomTabView: View {
     
     @State private var selection = 0
+    @State var tabNum = 0
     
+    var navTitle: [String] = ["투게덕", "쪽지", "프로필"]
     var body: some View {
         
         TabView(selection: $selection) {
@@ -18,6 +20,7 @@ struct BottomTabView: View {
                 .tabItem{
                     Image(systemName: "house")
                 }
+                .navigationBarTitle(Text("투게덕"), displayMode: .inline)
                 .tag(0)
             
             FeedView(members:members)
@@ -30,6 +33,10 @@ struct BottomTabView: View {
                 .tabItem{
                     Image(systemName: "envelope.fill")
                 }
+                .navigationBarTitle(Text("쪽지"), displayMode: .inline)
+//                .onTapGesture{
+//                    tabNum = 2
+//                }
                 .tag(2)
                 
             
@@ -37,14 +44,18 @@ struct BottomTabView: View {
                 .tabItem{
                     Image(systemName: "person.fill")
                 }
+                .onTapGesture{
+                    tabNum = 2
+                }
                 .tag(3)
         }
+        .navigationTitle(navTitle[tabNum])
         .accentColor(.black)
     }
 }
 
 struct BottomTabView_Previews: PreviewProvider {
     static var previews: some View {
-        BottomTabView()
+        BottomTabView(tabNum: 0)
     }
 }
