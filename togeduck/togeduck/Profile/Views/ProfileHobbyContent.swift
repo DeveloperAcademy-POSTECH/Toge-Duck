@@ -12,6 +12,18 @@ struct ProfileHobbyContent: View {
     var hobby: Hobby
     var body: some View {
         VStack{
+            HStack{
+                Spacer()
+                NavigationLink(destination: CreateContentView(hobbyForTitle: hobby.hobbyName)){
+                    Image(systemName: "square.and.pencil")
+                        .font(Font.system(size:20, weight: .semibold))
+                        .padding([.top], 5)
+                        .padding([.trailing])
+                        .foregroundColor(Color(red:0.216, green: 0.216, blue: 0.216))
+                }
+//                ProfileHobbyContent(member: member, hobby: member.hobbies[hobbyNum])
+                
+            }
             ForEach(hobby.hobbyPost){ post in
                 Button(action: {
                 }){

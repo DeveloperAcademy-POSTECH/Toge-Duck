@@ -25,15 +25,14 @@ struct ProfileView: View {
                     LazyVStack(pinnedViews:[.sectionHeaders]){
                         Section(header: ProfileHobbyButton(hobbyNum: $hobbyNum, member:member)
                             .background(Color.white)){
-                            ProfileHobbyContent(member: member, hobby: member.hobbies[hobbyNum])
-                        }
+                                ProfileHobbyContent(member: member, hobby: member.hobbies[hobbyNum])
+                            }
                     }
+                    .padding(.top, 20)
                 }
-                .padding(.top, 20)
             }
         }
     }
-        
 }
 
 struct ProfileView_Previews: PreviewProvider {

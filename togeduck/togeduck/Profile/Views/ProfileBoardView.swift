@@ -12,7 +12,7 @@ struct ProfileBoardView: View {
 //        NavigationView {
             TabView() {
                 ForEach(members) { index in
-                    NavigationLink(destination: ProfileView(member: index)){
+                    NavigationLink(destination: OthersProfileView(member: index)){
                         ProfileCardView(user: index)
                             .frame(width: .infinity, height: 600)
                             .background(Color.white)

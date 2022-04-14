@@ -18,42 +18,13 @@ struct ProfileCardView: View {
             VStack {
                 
                 ProfileDetailView(member: user)
-                
-                // SwiftUILowLayout 패키지를 사용해서 tag view 를 자동으로 생성
-                //                FlowLayout(mode: .scrollable, items: user.hobbies, itemSpacing: 4) {
-                //                    let name = $0
-                //
-                //                    Text(name.hobbyName)
-                //                        .padding(.horizontal)
-                //                        .frame(height: 35)
-                //                        .background(Color("DarkGray"))
-                //                        .foregroundColor(Color.white)
-                //                        .clipShape(RoundedRectangle(cornerRadius: 30))
-                //
-                //                }.padding()
                 Divider()
                     .padding(.bottom, 5)
                 HobbyList(name: user.hobbies)
-//                    .padding()
                 Divider()
                     .padding(.top, 5)
-                
-                //ㅋ                HStack {
-                //ㅋ
-                //ㅋ                    Image(systemName: "heart.fill")
-                //ㅋ
-                //ㅋ                    Text("\(user.subscribes)")
-                //ㅋ                        .padding(.trailing, 5)
-                //ㅋ
-                //ㅋ                    Image(systemName: "person.fill")
-                //ㅋ
-                //ㅋ                    Text("\(user.friends)")
-                //ㅋ
-                //ㅋ                }
-                //ㅋ                .padding(.bottom, 30)
-                
-                                GridView(post: user.hobbies)
-//                                    .frame(width: geometry.size.width, height: geometry.size.height/3.7)
+                GridView(post: user.hobbies)
+                //                                    .frame(width: geometry.size.width, height: geometry.size.height/3.7)
                 //
             }
             .padding(.top, 30)
@@ -97,7 +68,6 @@ struct GridView: View {
     
     let rows: [GridItem] = [
         GridItem(.adaptive(minimum: 80), spacing: 0)
-        
     ]
     
     var body: some View {
@@ -110,7 +80,6 @@ struct GridView: View {
                         .frame(height: 100)
                 }
             }
-//            .padding(.vertical, 0)
         }
     }
 }
@@ -123,7 +92,7 @@ struct userPostImageView: View {
         ForEach(postImage) { index in
             index.postImage
                 .resizable()
-//                .aspectRatio(contentMode: .fill)
+            //                .aspectRatio(contentMode: .fill)
                 .frame(maxWidth: 100, maxHeight:100)
         }
     }
