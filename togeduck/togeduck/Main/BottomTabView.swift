@@ -22,7 +22,7 @@ struct BottomTabView: View {
             
             FeedView(members:members)
                 .tabItem{
-                    Image(systemName: "highlighter")
+                    Image(systemName: "heart.fill")
                 }
                 .tag(1)
             

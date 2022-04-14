@@ -14,7 +14,7 @@ struct ProfileDetailView: View {
             Text(member.introduction)
                 .font(.system(size: 15))
                 .padding(8.0)
-                .overlay(RoundedRectangle(cornerRadius: 10)
+                .overlay(RoundedRectangle(cornerRadius: 15.5)
                     .stroke(Color(red: 0.216, green: 0.216, blue: 0.216))
                 )
             member.image

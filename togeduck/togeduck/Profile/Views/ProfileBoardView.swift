@@ -14,7 +14,7 @@ struct ProfileBoardView: View {
                 ForEach(members) { index in
                     NavigationLink(destination: ProfileView(member: index)){
                         ProfileCardView(user: index)
-                            .frame(maxWidth: .infinity, maxHeight: .infinity)
+                            .frame(width: .infinity, height: 600)
                             .background(Color.white)
                             .clipShape(RoundedRectangle(cornerRadius: 30))
                             .shadow(color: .gray, radius: 5, x: 3, y: 5)

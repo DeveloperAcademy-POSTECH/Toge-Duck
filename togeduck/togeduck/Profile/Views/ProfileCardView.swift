@@ -11,49 +11,52 @@ import SwiftUIFlowLayout
 struct ProfileCardView: View {
     
     var user : Member
-
+    
     var body: some View {
         
         GeometryReader { geometry in
             VStack {
                 
                 ProfileDetailView(member: user)
-                    .padding(.top, 20)
                 
                 // SwiftUILowLayout 패키지를 사용해서 tag view 를 자동으로 생성
-//                FlowLayout(mode: .scrollable, items: user.hobbies, itemSpacing: 4) {
-//                    let name = $0
-//
-//                    Text(name.hobbyName)
-//                        .padding(.horizontal)
-//                        .frame(height: 35)
-//                        .background(Color("DarkGray"))
-//                        .foregroundColor(Color.white)
-//                        .clipShape(RoundedRectangle(cornerRadius: 30))
-//
-//                }.padding()
-                
+                //                FlowLayout(mode: .scrollable, items: user.hobbies, itemSpacing: 4) {
+                //                    let name = $0
+                //
+                //                    Text(name.hobbyName)
+                //                        .padding(.horizontal)
+                //                        .frame(height: 35)
+                //                        .background(Color("DarkGray"))
+                //                        .foregroundColor(Color.white)
+                //                        .clipShape(RoundedRectangle(cornerRadius: 30))
+                //
+                //                }.padding()
+                Divider()
+                    .padding(.bottom, 5)
                 HobbyList(name: user.hobbies)
-                    .padding()
-                    
-//ㅋ                HStack {
-//ㅋ
-//ㅋ                    Image(systemName: "heart.fill")
-//ㅋ
-//ㅋ                    Text("\(user.subscribes)")
-//ㅋ                        .padding(.trailing, 5)
-//ㅋ
-//ㅋ                    Image(systemName: "person.fill")
-//ㅋ
-//ㅋ                    Text("\(user.friends)")
-//ㅋ
-//ㅋ                }
-//ㅋ                .padding(.bottom, 30)
+//                    .padding()
+                Divider()
+                    .padding(.top, 5)
                 
-                GridView(post: user.hobbies)
-                    .frame(width: geometry.size.width, height: geometry.size.height/3.7)
-                    
+                //ㅋ                HStack {
+                //ㅋ
+                //ㅋ                    Image(systemName: "heart.fill")
+                //ㅋ
+                //ㅋ                    Text("\(user.subscribes)")
+                //ㅋ                        .padding(.trailing, 5)
+                //ㅋ
+                //ㅋ                    Image(systemName: "person.fill")
+                //ㅋ
+                //ㅋ                    Text("\(user.friends)")
+                //ㅋ
+                //ㅋ                }
+                //ㅋ                .padding(.bottom, 30)
+                
+                                GridView(post: user.hobbies)
+//                                    .frame(width: geometry.size.width, height: geometry.size.height/3.7)
+                //
             }
+            .padding(.top, 30)
         }
     }
 }
@@ -65,20 +68,18 @@ struct HobbyList: View {
     
     var body: some View {
         
-        ScrollView(.horizontal) {
-            HStack {
+        HStack {
+            ForEach(name) { index in
+                Text(index.hobbyName)
+                    .font(.system(size:12, weight: .bold, design: .rounded))
+                    .foregroundColor(.white)
+                    .padding(7)
+                    .background(Color(red:0.216, green: 0.216, blue: 0.216))
+                    .clipShape(Capsule())
                 
-                ForEach(name) { index in
-                    Text(index.hobbyName)
-                        .padding(.horizontal)
-                        .frame(height: 35)
-                        .background(Color("DarkGray"))
-                        .foregroundColor(Color.white)
-                        .clipShape(RoundedRectangle(cornerRadius: 30))
-
-                }
             }
         }
+        
     }
 }
 
@@ -96,7 +97,7 @@ struct GridView: View {
     
     let rows: [GridItem] = [
         GridItem(.adaptive(minimum: 80), spacing: 0)
-
+        
     ]
     
     var body: some View {
@@ -104,24 +105,26 @@ struct GridView: View {
             LazyVGrid(columns: rows, alignment: .center, spacing: 0
             ) {
                 ForEach(post) { index in
-
+                    
                     userPostImageView(postImage: index.hobbyPost)
                         .frame(height: 100)
                 }
             }
-            .padding(.vertical)
+//            .padding(.vertical, 0)
         }
     }
 }
 
 struct userPostImageView: View {
-
+    
     var postImage: [Post]
-
+    
     var body: some View {
         ForEach(postImage) { index in
             index.postImage
                 .resizable()
+//                .aspectRatio(contentMode: .fill)
+                .frame(maxWidth: 100, maxHeight:100)
         }
     }
 }
