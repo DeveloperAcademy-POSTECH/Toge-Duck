@@ -116,7 +116,7 @@ struct HobbySelectView: View {
                                         .foregroundColor(Color(red: 0.84375, green: 0.84375, blue: 0.84375)))
                             }
                         }.padding(.top)
-                        NavigationLink(destination: MapView(), label: {
+                        NavigationLink(destination: MapView(member: members[0]), label: {
                             Text("완료")
                                 .font(.headline)
                                 .foregroundColor(.white)
