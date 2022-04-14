@@ -70,6 +70,7 @@ struct SignView: View {
         .onAppear {
             viewModel.signedIn = viewModel.isSignedIn
         }
+        .accentColor(Color.black)
     }
 }
 

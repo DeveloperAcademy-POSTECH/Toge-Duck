@@ -119,6 +119,7 @@ struct HobbySelectView: View {
                         
                     }.padding([.leading, .trailing])
                     
+
                 })
                 
                 NavigationLink(destination: MapView(member: members[0]), label: {
