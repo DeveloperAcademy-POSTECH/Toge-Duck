@@ -12,35 +12,44 @@ struct CreateContentView: View {
     @State private var hobby: String = ""
     @State private var content: String = ""
     
-    var hobbies: [Hobby]
+    //    @Binding var hobbyNum: Int
+    
+    var hobbyForTitle: String
     var body: some View {
         VStack {
             VStack {
                 TextField("제목", text: $title)
                     .disableAutocorrection(true)
-                HStack {
-                    Picker("취미선택", selection: $hobby){
-                        ForEach(hobbies){ hobby in
-                            Text(hobby.hobbyName)
-                                .foregroundColor(Color.black)
-                        }
-                    }
-                    .pickerStyle(.menu)
-                    Spacer()
-                }
+                    .padding(.bottom, 5)
                 Divider()
                 TextField("내용", text: $content)
                     .disableAutocorrection(true)
+                    .padding(.top, 5)
+            }
+            .padding([.leading, .trailing])
+            .navigationTitle(hobbyForTitle)
+            .toolbar{
+                Button(action: {}){
+                    Text("글쓰기")
+                        .foregroundColor(Color.white)
+                        .font(.system(size: 15))
+                        .background(RoundedRectangle(cornerRadius: 15)
+                            .frame(width:55, height: 25)
+                            .foregroundColor(Color(red: 0.216, green: 0.216, blue: 0.216)))
+                        .padding(.trailing, 10)
+                }
+                
             }
             Spacer()
-            
         }
         .padding()
+        
+        
     }
 }
 
 struct CreateContentView_Previews: PreviewProvider {
     static var previews: some View {
-        CreateContentView(hobbies: members[0].hobbies)
+        CreateContentView(hobbyForTitle: members[0].hobbies[0].hobbyName)
     }
 }

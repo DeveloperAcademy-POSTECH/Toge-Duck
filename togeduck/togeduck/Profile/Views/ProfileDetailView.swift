@@ -17,6 +17,7 @@ struct ProfileDetailView: View {
                 .overlay(RoundedRectangle(cornerRadius: 15.5)
                     .stroke(Color(red: 0.216, green: 0.216, blue: 0.216))
                 )
+                .padding(.top, 10)
             member.image
                 .resizable()
                 .aspectRatio(contentMode: .fit)
