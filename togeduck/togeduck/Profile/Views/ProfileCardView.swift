@@ -24,7 +24,7 @@ struct ProfileCardView: View {
                 Divider()
                     .padding(.top, 5)
                 GridView(post: user.hobbies)
-                //                                    .frame(width: geometry.size.width, height: geometry.size.height/3.7)
+                    .frame(width: geometry.size.width, height: geometry.size.height/3)
                 //
             }
             .padding(.top, 30)

@@ -14,7 +14,7 @@ struct HobbySelectView: View {
     @State private var select = [String]()
     @Environment(\.dismissSearch) var dismissSearch
     var favorite: [String] = ["라이딩", "축구", "농구", "야구", "넷플릭스", "재즈", "볼링", "밴드", "사진", "베이킹", "댄스"]
-    var rare: [String] = ["락 밴드", "돌 수집", "종이접기", "누워있기", "파쿠르", "번지점프", "저글링", "미식축구"]
+    var rare: [String] = ["락 밴드", "돌 수집", "와인", "종이접기", "누워있기", "파쿠르", "번지점프", "저글링", "미식축구"]
     let hobbies: [String] = ["라이딩", "축구", "농구", "야구", "넷플릭스", "재즈", "볼링", "밴드", "사진", "베이킹", "댄스", "락 밴드", "돌 수집", "종이접기", "누워있기", "파쿠르", "번지점프", "저글링", "미식축구"]
     
     
