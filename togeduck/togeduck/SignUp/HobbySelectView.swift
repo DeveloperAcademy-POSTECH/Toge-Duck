@@ -133,7 +133,6 @@ struct HobbySelectView: View {
                 .padding(.top, -4)
                 
             }
-            
             .searchable(text: $searchingFor, prompt: "Hobby Search", suggestions : {
                 ForEach(results, id: \.self) { hobby in
                     Text(hobby)
