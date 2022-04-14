@@ -13,9 +13,9 @@ struct HobbySelectView: View {
     @State var searchingFor = ""
     @State private var select = [String]()
     @Environment(\.dismissSearch) var dismissSearch
-    var favorite: [String] = ["라이딩", "축구", "야구", "넷플릭스", "재즈", "볼링", "밴드", "사진", "베이킹", "댄스"]
-    var rare: [String] = ["돌 수집", "파쿠르", "번지점프", "저글링", "미식축구"]
-    let hobbies: [String] = ["밴드음악", "밴드부", "밴드동아리", "밴드필라테스", "밴드공연", "헤어밴드","축구","야구","영화","사진","드라마","애니","스피커","Apple"]
+    var favorite: [String] = ["라이딩", "축구", "농구", "야구", "넷플릭스", "재즈", "볼링", "밴드", "사진", "베이킹", "댄스"]
+    var rare: [String] = ["락 밴드", "돌 수집", "종이접기", "누워있기", "파쿠르", "번지점프", "저글링", "미식축구"]
+    let hobbies: [String] = ["라이딩", "축구", "농구", "야구", "넷플릭스", "재즈", "볼링", "밴드", "사진", "베이킹", "댄스", "락 밴드", "돌 수집", "종이접기", "누워있기", "파쿠르", "번지점프", "저글링", "미식축구"]
     
     
     var results: [String] {
@@ -116,7 +116,7 @@ struct HobbySelectView: View {
                                         .foregroundColor(Color(red: 0.84375, green: 0.84375, blue: 0.84375)))
                             }
                         }.padding(.top)
-                        NavigationLink(destination: MapView(), label: {
+                        NavigationLink(destination: MapView(member: members[0]), label: {
                             Text("완료")
                                 .font(.headline)
                                 .foregroundColor(.white)
@@ -133,10 +133,10 @@ struct HobbySelectView: View {
                 .padding(.top, -4)
                 
             }
-            
             .searchable(text: $searchingFor, prompt: "Hobby Search", suggestions : {
                 ForEach(results, id: \.self) { hobby in
                     Text(hobby)
+                        .padding(.leading)
                 }
             })
             .padding(.top,3)
