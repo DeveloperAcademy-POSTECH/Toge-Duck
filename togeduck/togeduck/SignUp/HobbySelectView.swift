@@ -26,9 +26,9 @@ struct HobbySelectView: View {
         }
     }
     var body: some View {
-        NavigationView {
-            ZStack {
-                VStack {
+        ZStack {
+            VStack {
+                ScrollView(.vertical, showsIndicators: false, content:{
                     VStack {
                         Text("내가 선택한 취미")
                             .font(.system(size: 12))
@@ -116,36 +116,33 @@ struct HobbySelectView: View {
                                         .foregroundColor(Color(red: 0.84375, green: 0.84375, blue: 0.84375)))
                             }
                         }.padding(.top)
-                        NavigationLink(destination: MapView(member: members[0]), label: {
-                            Text("완료")
-                                .font(.headline)
-                                .foregroundColor(.white)
-                                .frame(width: 360, height: 50)
-                                .background(Color.blue)
-                                .clipShape(Capsule())
-                                .padding()
-                        }).padding(.top,30)
                         
-                    }.padding()
-                    Spacer()
+                    }.padding([.leading, .trailing])
                     
-                }
-                .padding(.top, -4)
-                .searchable(text: $searchingFor, prompt: "Hobby Search", suggestions : {
-                    ForEach(results, id: \.self) { hobby in
-                        Text(hobby)
-                            .padding(.leading)
-                    }
+
+                })
+                
+                NavigationLink(destination: MapView(member: members[0]), label: {
+                    Text("완료")
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .frame(width: 360, height: 50)
+                        .background(Color.black)
+                        .clipShape(Capsule())
+                        .padding()
                 })
             }
-            
-            .padding(.top,3)
-            .padding(.leading,5)
-            
-            
+            .navigationTitle("취미 선택")
+            .navigationBarTitleDisplayMode(.inline)
+            .searchable(text: $searchingFor,
+                        placement: .navigationBarDrawer(displayMode: .always),
+                        prompt: "취미를 선택해주세요.", suggestions : {
+                ForEach(results, id: \.self) { hobby in
+                    Text(hobby)
+                        .padding(.leading)
+                }
+            })
         }
-        .navigationTitle("취미 선택")
-        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
