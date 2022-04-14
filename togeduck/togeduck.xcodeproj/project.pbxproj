@@ -15,6 +15,7 @@
 		3E3125E927FFE24100F475BD /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3125E827FFE24100F475BD /* ModelData.swift */; };
 		3E9D103C28010B6200404AF5 /* members.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E9D103B28010B6200404AF5 /* members.json */; };
 		3E9D104028030CB800404AF5 /* ProfileHobbyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9D103F28030CB800404AF5 /* ProfileHobbyButton.swift */; };
+		3EA51A582807AEB7009FA806 /* CreateContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA51A572807AEB7009FA806 /* CreateContentView.swift */; };
 		3EDD955027FFE6FD002E3E1E /* ProfileDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDD954F27FFE6FD002E3E1E /* ProfileDetailView.swift */; };
 		3FB3251D2803C6F000792AA2 /* ProfileCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB3251C2803C6F000792AA2 /* ProfileCardView.swift */; };
 		3FB3251F2803C75000792AA2 /* ProfileBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB3251E2803C75000792AA2 /* ProfileBoardView.swift */; };
@@ -67,6 +68,7 @@
 		3E3125E827FFE24100F475BD /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		3E9D103B28010B6200404AF5 /* members.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = members.json; sourceTree = "<group>"; };
 		3E9D103F28030CB800404AF5 /* ProfileHobbyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHobbyButton.swift; sourceTree = "<group>"; };
+		3EA51A572807AEB7009FA806 /* CreateContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateContentView.swift; sourceTree = "<group>"; };
 		3EDD954F27FFE6FD002E3E1E /* ProfileDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailView.swift; sourceTree = "<group>"; };
 		3FB3251C2803C6F000792AA2 /* ProfileCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCardView.swift; sourceTree = "<group>"; };
 		3FB3251E2803C75000792AA2 /* ProfileBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileBoardView.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				3FB3251E2803C75000792AA2 /* ProfileBoardView.swift */,
 				CB92E12F28051218006BB3F0 /* FeedView.swift */,
 				3E1CF2A6280505D000BC744F /* ContentDetailView.swift */,
+				3EA51A572807AEB7009FA806 /* CreateContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 				3FB3251D2803C6F000792AA2 /* ProfileCardView.swift in Sources */,
 				F6D8200D27FFD34400CB5747 /* HobbySelectView.swift in Sources */,
 				F6D8200B27FFD32000CB5747 /* RegisterView.swift in Sources */,
+				3EA51A582807AEB7009FA806 /* CreateContentView.swift in Sources */,
 				3FB325212803C86400792AA2 /* BottomTabView.swift in Sources */,
 				CB92E13028051218006BB3F0 /* FeedView.swift in Sources */,
 				3E9D104028030CB800404AF5 /* ProfileHobbyButton.swift in Sources */,

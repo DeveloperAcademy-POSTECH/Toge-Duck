@@ -15,7 +15,7 @@ struct ProfileView: View {
         VStack{
             VStack{
                 Color.white
-                    .frame(height: 10)
+                    .frame(height: 1)
                     .edgesIgnoringSafeArea(.top)
                     .background(Color.white)
             }
