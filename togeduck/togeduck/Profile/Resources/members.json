@@ -36,15 +36,15 @@
                 "isShown":true
             },
             {
-                "hobbyName": "락밴드",
+                "hobbyName": "농구",
                 "hobbyPost": [
                     {
                         "postTitle": "SURL 최고",
-                        "postContent": "언제나와 같이 SURL의 콘서트는 최고였다",
+                        "postContent": "니로님의 킬패스로 우리는 승리할 수 있었다.",
                         "postImageName": "hobbyImage1-1"
                     },
                     {
-                        "postTitle": "개성왕만두와 와인 한잔",
+                        "postTitle": "개성왕만두와 농구 한판",
                         "postContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lectus ipsum, volutpat at rhoncus quis, accumsan ut risus. Morbi rhoncus pulvinar ante et aliquam. Duis feugiat vel nisl ut blandit. Cras tristique purus eu nulla eleifend tempor. Mauris vitae felis risus. Etiam elit mi, fermentum ut sapien nec, feugiat tempus arcu. Sed suscipit mauris velit, in efficitur justo mollis nec. In hac habitasse platea dictumst. Aliquam faucibus, ante sit amet elementum iaculis, velit mauris pellentesque urna, quis varius risus metus in felis. Suspendisse ut accumsan lacus. Suspendisse potenti",
                         "postImageName": "hobbyImage1-2"
                     }
@@ -55,8 +55,8 @@
                 "hobbyName": "종이접기",
                 "hobbyPost": [
                     {
-                        "postTitle": "SURL 최고",
-                        "postContent": "언제나와 같이 SURL의 콘서트는 최고였다",
+                        "postTitle": "최고의 혼자 놀기 방법",
+                        "postContent": "혼자해도 좋지만 팀원들과의 종이접기는 최고다.",
                         "postImageName": "wine5"
                     }
                 ],
