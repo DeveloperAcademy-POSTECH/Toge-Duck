@@ -8,6 +8,7 @@
 import Foundation
 
 var members: [Member] = load("members.json")
+var messages: [SendMessage] = load("UserMessage.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data

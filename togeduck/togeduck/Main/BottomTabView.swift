@@ -37,27 +37,24 @@ struct BottomTabView: View {
                 .navigationBarTitle(Text("\(barTitle)"), displayMode: .inline)
                 .tag(1)
             
-            Text("세번째 뷰")
+            MessageView(message: messages)
                 .tabItem{
                     Image(systemName: "envelope.fill")
                 }
                 .onAppear() {
                     self.barTitle = "쪽지"
                 }
+//                .navigationTitle(Text("\(barTitle)"))
+//                .navigationBarTitleDisplayMode(.inline)
                 .navigationBarTitle(Text("\(barTitle)"), displayMode: .inline)
-//                .navigationBarTitle(Text("쪽지"), displayMode: .inline)
 //                .onTapGesture{
 //                    tabNum = 2
 //                }
                 .tag(2)
-                
             
             ProfileView(member:members[0])
                 .tabItem{
                     Image(systemName: "person.fill")
-                }
-                .onTapGesture{
-                    tabNum = 2
                 }
                 .onAppear() {
                     self.barTitle = "프로필"
@@ -65,7 +62,7 @@ struct BottomTabView: View {
                 .navigationBarTitle(Text("\(barTitle)"), displayMode: .inline)
                 .tag(3)
         }
-        .navigationTitle(navTitle[tabNum])
+//        .navigationTitle(navTitle[tabNum])
         .accentColor(.black)
     }
 }

@@ -22,6 +22,9 @@
 		3FB3251D2803C6F000792AA2 /* ProfileCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB3251C2803C6F000792AA2 /* ProfileCardView.swift */; };
 		3FB3251F2803C75000792AA2 /* ProfileBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB3251E2803C75000792AA2 /* ProfileBoardView.swift */; };
 		3FB325212803C86400792AA2 /* BottomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB325202803C86400792AA2 /* BottomTabView.swift */; };
+		3FCA0926280BF64E0028D4CA /* SendMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCA0925280BF64E0028D4CA /* SendMessageView.swift */; };
+		3FCA092A280BFD410028D4CA /* UserMessage.json in Resources */ = {isa = PBXBuildFile; fileRef = 3FCA0929280BFD410028D4CA /* UserMessage.json */; };
+		3FCA092C280C05C10028D4CA /* SendMessageModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCA092B280C05C10028D4CA /* SendMessageModalView.swift */; };
 		CB92E13028051218006BB3F0 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB92E12F28051218006BB3F0 /* FeedView.swift */; };
 		CBDC9E5927FE762D00C2668F /* SwiftUIFlowLayout in Frameworks */ = {isa = PBXBuildFile; productRef = CBDC9E5827FE762D00C2668F /* SwiftUIFlowLayout */; };
 		F620EDDB28042B4B006B3DE9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F620EDDA28042B4B006B3DE9 /* GoogleService-Info.plist */; };
@@ -77,6 +80,9 @@
 		3FB3251C2803C6F000792AA2 /* ProfileCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCardView.swift; sourceTree = "<group>"; };
 		3FB3251E2803C75000792AA2 /* ProfileBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileBoardView.swift; sourceTree = "<group>"; };
 		3FB325202803C86400792AA2 /* BottomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTabView.swift; sourceTree = "<group>"; };
+		3FCA0925280BF64E0028D4CA /* SendMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMessageView.swift; sourceTree = "<group>"; };
+		3FCA0929280BFD410028D4CA /* UserMessage.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UserMessage.json; sourceTree = "<group>"; };
+		3FCA092B280C05C10028D4CA /* SendMessageModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMessageModalView.swift; sourceTree = "<group>"; };
 		CB92E12F28051218006BB3F0 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		F620EDDA28042B4B006B3DE9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F620EDDC28042B8F006B3DE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -144,6 +150,8 @@
 				3EA51A572807AEB7009FA806 /* CreateContentView.swift */,
 				3EA51A5B2807F16A009FA806 /* OthersProfileView.swift */,
 				3EA51A5D2807F458009FA806 /* MessageView.swift */,
+				3FCA0925280BF64E0028D4CA /* SendMessageView.swift */,
+				3FCA092B280C05C10028D4CA /* SendMessageModalView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -161,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				3E9D103B28010B6200404AF5 /* members.json */,
+				3FCA0929280BFD410028D4CA /* UserMessage.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -384,6 +393,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FCA092A280BFD410028D4CA /* UserMessage.json in Resources */,
 				3E9D103C28010B6200404AF5 /* members.json in Resources */,
 				F620EDDB28042B4B006B3DE9 /* GoogleService-Info.plist in Resources */,
 				F8AE9B7A27FD182300834B44 /* Preview Assets.xcassets in Resources */,
@@ -422,9 +432,11 @@
 				F6D8200D27FFD34400CB5747 /* HobbySelectView.swift in Sources */,
 				F6D8200B27FFD32000CB5747 /* RegisterView.swift in Sources */,
 				3EA51A582807AEB7009FA806 /* CreateContentView.swift in Sources */,
+				3FCA0926280BF64E0028D4CA /* SendMessageView.swift in Sources */,
 				3FB325212803C86400792AA2 /* BottomTabView.swift in Sources */,
 				3EA51A5C2807F16A009FA806 /* OthersProfileView.swift in Sources */,
 				CB92E13028051218006BB3F0 /* FeedView.swift in Sources */,
+				3FCA092C280C05C10028D4CA /* SendMessageModalView.swift in Sources */,
 				3E9D104028030CB800404AF5 /* ProfileHobbyButton.swift in Sources */,
 				3E3125E927FFE24100F475BD /* ModelData.swift in Sources */,
 				F8AE9B7527FD182000834B44 /* ContentView.swift in Sources */,

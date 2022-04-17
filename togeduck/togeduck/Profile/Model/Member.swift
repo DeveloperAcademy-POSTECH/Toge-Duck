@@ -42,3 +42,13 @@ struct Post: Hashable, Codable, Identifiable {
     
 //    private enum CodingKeys : String, CodingKey {case postTitle, postContent, postImageName, postImage}
 }
+
+struct SendMessage: Hashable, Codable, Identifiable {
+    let id = UUID()
+    var name: String
+    var message: String
+    private var imageName: String
+    var image: Image {
+        Image(imageName)
+    }
+}

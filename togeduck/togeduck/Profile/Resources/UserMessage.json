@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Id",
+        "imageName": "profileImage1",
+        "message" : "같이 와인 한잔 하러 가실래요?"
+    },
+    {
+        "name": "Niro",
+        "imageName": "profileImage2",
+        "message" : "이번주 주말 라이딩 어때요?"
+    },
+    {
+        "name": "Sherry",
+        "imageName": "profileImage3",
+        "message" : "저도 같이 활동할 수 있을까요?"
+    },
+    {
+        "name": "Coby",
+        "imageName": "profileImage4",
+        "message" : "저 다음주에 못갈거 같아요 ㅠㅠㅠ"
+    },
+    {
+        "name": "Skipp",
+        "imageName": "profileImage5",
+        "message" : "다음주 얼른 왔으면 좋겠다!"
+    }
+]
