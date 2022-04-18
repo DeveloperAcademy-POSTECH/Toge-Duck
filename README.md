@@ -1,4 +1,4 @@
-![Toge-Duck_icon](https://user-images.githubusercontent.com/72431640/163743865-f7d9e02f-f9ac-451e-b432-6952bbf0a3c9.jpeg){: width="30%", height="30%"}
+<img src="https://user-images.githubusercontent.com/72431640/163743865-f7d9e02f-f9ac-451e-b432-6952bbf0a3c9.jpeg" width="30%" height="30%">
 
 
 # :iphone: Toge-Duck
@@ -30,13 +30,11 @@ https://user-images.githubusercontent.com/72431640/163745149-b4338ef2-4721-466b-
 
 ## :fireworks: Screenshots
 
-![KakaoTalk_Photo_2022-04-18-11-28-32]
 <img src="https://user-images.githubusercontent.com/72431640/163745179-0904e093-e4c9-43d0-b6ad-3a0a08248b21.png" width="30%" height="30%">
 
-![KakaoTalk_Photo_2022-04-18-11-28-49]
 <img src="https://user-images.githubusercontent.com/72431640/163745192-8b882d76-c54a-4f00-9b7d-375e121bd69e.png" width="30%" height="30%">
 
-![KakaoTalk_Photo_2022-04-18-11-29-01]<img src="https://user-images.githubusercontent.com/72431640/163745197-244bf64e-6205-4665-896d-680a750fcfb2.png" width="30%" height="30%">
+<img src="https://user-images.githubusercontent.com/72431640/163745197-244bf64e-6205-4665-896d-680a750fcfb2.png" width="30%" height="30%">
 
 
 ## :sparkles: Skills & Tech Stack
