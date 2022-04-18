@@ -16,7 +16,7 @@ Find friends who have the same hobby as you and "dig" in with them!
 
 ## :people_hugging: Authors
 
-- [@Hongju Been](https://www.github.com/skipp-29) | [@Seongmin Lee](https://www.github.com/) | [@Yeji Jeon](https://www.github.com/yeahaluu) | [@Doyoung Kim](https://www.github.com/coby5502) | [@Junhyuk Park](https://www.github.com/Genesis2010) | [@Yoonjae Lee](https://www.github.com/lee02029)
+- [@Hongju Been](https://www.github.com/skipp-29) | [@Seongmin Lee](https://www.github.com/seongmin221) | [@Yeji Jeon](https://www.github.com/yeahaluu) | [@Doyoung Kim](https://www.github.com/coby5502) | [@Junhyuk Park](https://www.github.com/Genesis2010) | [@Yoonjae Lee](https://www.github.com/lee02029)
 
 
 ## :framed_picture: Demo
